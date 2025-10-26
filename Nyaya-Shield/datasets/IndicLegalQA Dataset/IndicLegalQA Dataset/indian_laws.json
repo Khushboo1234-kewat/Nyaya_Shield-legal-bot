@@ -1,0 +1,2224 @@
+{
+  "indian_dataset": [
+    {
+      "id": 1,
+      "category": "IPC",
+      "section": "Section 302",
+      "query": "What is punishment for murder under IPC?",
+      "response": "Under Section 302 of IPC, whoever commits murder shall be punished with death or imprisonment for life, and shall also be liable to fine.",
+      "keywords": ["murder", "section 302", "punishment", "death penalty", "life imprisonment"]
+    },
+    {
+      "id": 2,
+      "category": "IPC",
+      "section": "Section 420",
+      "query": "What constitutes cheating under Indian Penal Code?",
+      "response": "Section 420 IPC defines cheating as whoever dishonestly induces person to deliver property or consent that he retain property, or intentionally induces person to do or omit to do anything which he would not do if he were not so deceived. Punishment is imprisonment up to 7 years and fine.",
+      "keywords": ["cheating", "fraud", "section 420", "dishonest inducement", "property"]
+    },
+    {
+      "id": 3,
+      "category": "IPC",
+      "section": "Section 498A",
+      "query": "What is dowry harassment law in India?",
+      "response": "Section 498A IPC deals with cruelty by husband or relatives. If husband or relative subjects woman to cruelty, they can be punished with imprisonment up to 3 years and fine. Cruelty includes harassment for dowry demands.",
+      "keywords": ["dowry", "498A", "domestic violence", "cruelty", "harassment"]
+    },
+    {
+      "id": 4,
+      "category": "IPC",
+      "section": "Section 354",
+      "query": "What is punishment for outraging modesty of woman?",
+      "response": "Section 354 IPC states that whoever assaults or uses criminal force to woman, intending to outrage her modesty, shall be punished with imprisonment up to 2 years, or fine, or both.",
+      "keywords": ["modesty", "assault", "woman", "criminal force", "354"]
+    },
+    {
+      "id": 5,
+      "category": "IPC",
+      "section": "Section 376",
+      "query": "What are provisions for rape under IPC?",
+      "response": "Section 376 IPC prescribes punishment for rape. Minimum punishment is 7 years imprisonment extending to 10 years or life imprisonment. In cases of gang rape or rape of minor, punishment can be death penalty.",
+      "keywords": ["rape", "376", "sexual assault", "minimum punishment", "gang rape"]
+    },
+    {
+      "id": 6,
+      "category": "IT_ACT",
+      "section": "Section 66",
+      "query": "What is punishment for computer related offences under IT Act?",
+      "response": "Section 66 of IT Act 2000 provides that if person dishonestly or fraudulently does any act referred to in section 43, he shall be punished with imprisonment up to 3 years or fine up to 5 lakh rupees or both.",
+      "keywords": ["computer offences", "66", "hacking", "fraud", "cybercrime"]
+    },
+    {
+      "id": 7,
+      "category": "IT_ACT",
+      "section": "Section 67",
+      "query": "What is punishment for publishing obscene material online?",
+      "response": "Section 67 IT Act deals with publishing obscene material in electronic form. First conviction: imprisonment up to 3 years and fine up to 5 lakh. Subsequent conviction: imprisonment up to 5 years and fine up to 10 lakh.",
+      "keywords": ["obscene material", "pornography", "electronic form", "67", "cyberporn"]
+    },
+    {
+      "id": 8,
+      "category": "IT_ACT",
+      "section": "Section 43",
+      "query": "What constitutes unauthorized access to computer system?",
+      "response": "Section 43 IT Act defines unauthorized access as accessing computer/network without permission, downloading/copying data, introducing virus, damaging computer system. Liable for compensation up to 1 crore rupees.",
+      "keywords": ["unauthorized access", "hacking", "computer system", "virus", "43"]
+    },
+    {
+      "id": 9,
+      "category": "IT_ACT",
+      "section": "Section 66A",
+      "query": "Is Section 66A of IT Act still valid?",
+      "response": "Section 66A of IT Act has been struck down by Supreme Court in Shreya Singhal case (2015) as it was found to be unconstitutional and violation of freedom of speech under Article 19(1)(a).",
+      "keywords": ["66A", "struck down", "unconstitutional", "freedom of speech", "Shreya Singhal"]
+    },
+    {
+      "id": 10,
+      "category": "CRPC",
+      "section": "Section 154",
+      "query": "How to file FIR under CrPC?",
+      "response": "Under Section 154 CrPC, information about cognizable offence can be given orally or in writing to officer in charge of police station. Police must record information and give copy to informant free of cost.",
+      "keywords": ["FIR", "154", "cognizable offence", "police station", "information"]
+    },
+    {
+      "id": 11,
+      "category": "CRPC",
+      "section": "Section 41",
+      "query": "When can police arrest without warrant?",
+      "response": "Section 41 CrPC allows police to arrest without warrant for cognizable offences, breach of peace, obstruction of police officer, escaped convict, court absconder, and suspected persons who cannot give satisfactory account.",
+      "keywords": ["arrest", "without warrant", "cognizable", "41", "police powers"]
+    },
+    {
+      "id": 12,
+      "category": "CRPC",
+      "section": "Section 437",
+      "query": "What are provisions for bail in non-bailable offences?",
+      "response": "Section 437 CrPC states that bail in non-bailable cases may be granted if offence punishable with death/life imprisonment and court satisfied that accused not guilty and not likely to commit offence on bail.",
+      "keywords": ["bail", "non-bailable", "437", "death penalty", "life imprisonment"]
+    },
+    {
+      "id": 13,
+      "category": "CRPC",
+      "section": "Section 161",
+      "query": "Can police interrogate without lawyer present?",
+      "response": "Section 161 CrPC allows police to examine witnesses during investigation. However, under Article 22(1) Constitution and Section 303 CrPC, accused has right to consult lawyer during interrogation.",
+      "keywords": ["interrogation", "161", "lawyer", "right to counsel", "investigation"]
+    },
+    {
+      "id": 14,
+      "category": "CONSUMER",
+      "section": "Consumer Protection Act 2019",
+      "query": "What is the definition of consumer under Consumer Protection Act?",
+      "response": "Consumer Protection Act 2019 defines consumer as person who buys goods or avails services for consideration, excludes goods for resale or commercial purpose. Includes online transactions and e-commerce.",
+      "keywords": ["consumer", "definition", "goods", "services", "e-commerce"]
+    },
+    {
+      "id": 15,
+      "category": "CONSUMER",
+      "section": "Section 35",
+      "query": "What are consumer rights under Consumer Protection Act?",
+      "response": "Consumer rights include: right to safety, information, choice, representation, redressal of grievances, and consumer education. Consumers can file complaints for defective goods, deficient services, unfair trade practices.",
+      "keywords": ["consumer rights", "safety", "information", "choice", "redressal"]
+    },
+    {
+      "id": 16,
+      "category": "CONSUMER",
+      "section": "Central Consumer Protection Authority",
+      "query": "What is CCPA and its powers?",
+      "response": "Central Consumer Protection Authority (CCPA) is regulatory body under Consumer Protection Act 2019. It can investigate violations, order recalls, impose penalties up to 1 crore, and prosecute for misleading advertisements.",
+      "keywords": ["CCPA", "regulatory", "penalties", "misleading ads", "investigation"]
+    },
+    {
+      "id": 17,
+      "category": "PROPERTY",
+      "section": "Transfer of Property Act",
+      "query": "What is the definition of transfer of property?",
+      "response": "Transfer of Property Act 1882 defines transfer as act by which living person conveys property to one or more living persons. Includes sale, mortgage, lease, exchange, and gift of immovable property.",
+      "keywords": ["transfer", "property", "conveyance", "sale", "mortgage", "lease"]
+    },
+    {
+      "id": 18,
+      "category": "PROPERTY",
+      "section": "Section 17 TPA",
+      "query": "What documents are required for property registration?",
+      "response": "For property registration under Registration Act: sale deed, NOC from society, tax receipts, survey settlement records, identity proofs, PAN cards, and stamp duty payment. Registration within 4 months of execution.",
+      "keywords": ["registration", "documents", "sale deed", "stamp duty", "4 months"]
+    },
+    {
+      "id": 19,
+      "category": "PROPERTY",
+      "section": "Benami Transactions Act",
+      "query": "What is benami property and its consequences?",
+      "response": "Benami property is held by one person for benefit of another. Benami Transactions Act 1988 prohibits such transactions. Property can be confiscated and person can face imprisonment up to 7 years and fine.",
+      "keywords": ["benami", "prohibited", "confiscation", "7 years", "imprisonment"]
+    },
+    {
+      "id": 20,
+      "category": "FAMILY",
+      "section": "Hindu Marriage Act 1955",
+      "query": "What are grounds for divorce under Hindu Marriage Act?",
+      "response": "Grounds for divorce under HMA: adultery, cruelty, desertion for 2+ years, conversion to another religion, mental disorder, communicable disease, renunciation of world. Mutual consent divorce also available.",
+      "keywords": ["divorce", "grounds", "adultery", "cruelty", "desertion", "mutual consent"]
+    },
+    {
+      "id": 21,
+      "category": "FAMILY",
+      "section": "Section 125 CrPC",
+      "query": "What is maintenance law for wife and children?",
+      "response": "Section 125 CrPC provides for maintenance of wife, children, and parents. Wife entitled to maintenance if unable to maintain herself. Amount depends on income and reasonable needs. Applies to all religions.",
+      "keywords": ["maintenance", "wife", "children", "125", "income", "reasonable needs"]
+    },
+    {
+      "id": 22,
+      "category": "FAMILY",
+      "section": "Child Custody",
+      "query": "How is child custody decided in divorce cases?",
+      "response": "Child custody decided based on welfare of child principle. Factors: age, financial capacity, moral character of parents, child's preference (if mature). Generally, children below 7 years given to mother.",
+      "keywords": ["child custody", "welfare", "best interest", "age", "mother", "father"]
+    },
+    {
+      "id": 23,
+      "category": "FAMILY",
+      "section": "Adoption Laws",
+      "query": "What are legal requirements for adoption in India?",
+      "response": "Adoption governed by Hindu Adoption and Maintenance Act for Hindus, and Juvenile Justice Act for others. Requirements: adoptive parents must be Indian citizens, age difference of 25 years, court approval required.",
+      "keywords": ["adoption", "Hindu Adoption Act", "Juvenile Justice", "25 years", "court approval"]
+    },
+    {
+      "id": 24,
+      "category": "IPC",
+      "section": "Section 307",
+      "query": "What is attempt to murder under IPC?",
+      "response": "Section 307 IPC deals with attempt to murder. If act done with intention and knowledge that likely to cause death, and death not caused, punishable with imprisonment up to 10 years and fine. If hurt caused, can extend to life imprisonment.",
+      "keywords": ["attempt to murder", "307", "intention", "10 years", "life imprisonment"]
+    },
+    {
+      "id": 25,
+      "category": "IPC",
+      "section": "Section 506",
+      "query": "What constitutes criminal intimidation?",
+      "response": "Section 506 IPC defines criminal intimidation as threatening person with injury to person, reputation or property to cause alarm. Punishment is imprisonment up to 2 years or fine or both. If threat is of death/grievous hurt, up to 7 years.",
+      "keywords": ["criminal intimidation", "506", "threat", "2 years", "death threat", "7 years"]
+    },
+    {
+      "id": 26,
+      "category": "IT_ACT",
+      "section": "Section 72",
+      "query": "What is penalty for breach of confidentiality and privacy?",
+      "response": "Section 72 IT Act deals with penalty for breach of confidentiality and privacy. If person secures access to electronic record/information without consent and discloses to other person, imprisonment up to 2 years or fine up to 1 lakh or both.",
+      "keywords": ["breach of confidentiality", "privacy", "72", "electronic record", "2 years", "1 lakh"]
+    },
+    {
+      "id": 27,
+      "category": "CRPC",
+      "section": "Section 164",
+      "query": "What is confession before magistrate?",
+      "response": "Section 164 CrPC allows magistrate to record confession and statements during investigation. Confession must be voluntary, magistrate must satisfy that accused is making confession voluntarily without threat/promise.",
+      "keywords": ["confession", "164", "magistrate", "voluntary", "investigation"]
+    },
+    {
+      "id": 28,
+      "category": "CONSUMER",
+      "section": "Product Liability",
+      "query": "What is product liability under Consumer Protection Act?",
+      "response": "Product liability under Consumer Protection Act 2019 makes manufacturer, service provider liable for harm caused by defective products. Consumer can claim compensation for injury, damage caused by defective product or deficient service.",
+      "keywords": ["product liability", "manufacturer", "defective", "compensation", "harm"]
+    },
+    {
+      "id": 29,
+      "category": "PROPERTY",
+      "section": "Rent Control Laws",
+      "query": "What are tenant rights under rent control laws?",
+      "response": "Tenant rights under rent control laws: protection from arbitrary eviction, fair rent fixation, right to basic amenities, notice period for eviction. Landlord can evict for non-payment, subletting, or personal necessity with proper procedure.",
+      "keywords": ["tenant rights", "rent control", "eviction", "fair rent", "notice period"]
+    },
+    {
+      "id": 30,
+      "category": "FAMILY",
+      "section": "Domestic Violence Act",
+      "query": "What remedies are available under Domestic Violence Act?",
+      "response": "Domestic Violence Act 2005 provides protection orders, residence orders, monetary relief, custody orders. Woman can approach magistrate, police, protection officer. Includes physical, sexual, verbal, emotional, and economic abuse.",
+      "keywords": ["domestic violence", "protection order", "residence order", "monetary relief", "abuse"]
+    },
+    {
+      "id": 31,
+      "category": "IPC",
+      "section": "Section 409",
+      "query": "What is criminal breach of trust by public servant?",
+      "response": "Section 409 IPC deals with criminal breach of trust by public servant, banker, merchant, agent. Being entrusted with property and dishonestly misappropriating or converting it. Punishment is imprisonment up to 10 years and fine.",
+      "keywords": ["criminal breach of trust", "409", "public servant", "misappropriation", "10 years"]
+    },
+    {
+      "id": 32,
+      "category": "IPC",
+      "section": "Section 304B",
+      "query": "What is dowry death under IPC?",
+      "response": "Section 304B IPC deals with dowry death. If woman dies within 7 years of marriage due to burns/bodily injury under abnormal circumstances and she was subjected to cruelty for dowry, husband/relatives presumed to have caused death. Punishment is imprisonment not less than 7 years extending to life imprisonment.",
+      "keywords": ["dowry death", "304B", "7 years marriage", "abnormal circumstances", "life imprisonment"]
+    },
+    {
+      "id": 33,
+      "category": "IT_ACT",
+      "section": "Section 69",
+      "query": "What are powers of government for interception of information?",
+      "response": "Section 69 IT Act empowers Central/State Government to intercept, monitor, decrypt any information through any computer resource in interest of sovereignty, security, public order. Proper authorization and procedure must be followed.",
+      "keywords": ["interception", "69", "government powers", "monitoring", "security", "authorization"]
+    },
+    {
+      "id": 34,
+      "category": "CRPC",
+      "section": "Section 482",
+      "query": "What are inherent powers of High Court under CrPC?",
+      "response": "Section 482 CrPC gives High Court inherent powers to make orders necessary for ends of justice or to prevent abuse of process. Can quash FIR, criminal proceedings if found to be frivolous or motivated.",
+      "keywords": ["inherent powers", "482", "High Court", "quash FIR", "abuse of process", "ends of justice"]
+    },
+    {
+      "id": 35,
+      "category": "CONSUMER",
+      "section": "E-commerce Rules",
+      "query": "What are consumer rights in e-commerce transactions?",
+      "response": "E-commerce rules under Consumer Protection Act provide: right to return/exchange, clear pricing, grievance redressal mechanism, no mis-selling, protection of personal data, clear terms and conditions display.",
+      "keywords": ["e-commerce", "return policy", "grievance redressal", "mis-selling", "personal data", "terms conditions"]
+    },
+    {
+      "id": 36,
+      "category": "PROPERTY",
+      "section": "RERA",
+      "query": "What is RERA and its benefits for home buyers?",
+      "response": "Real Estate Regulation Act (RERA) 2016 regulates real estate sector. Benefits: project registration mandatory, carpet area definition, timeline adherence, escrow account for funds, grievance redressal through RERA authority.",
+      "keywords": ["RERA", "real estate", "project registration", "carpet area", "escrow account", "grievance"]
+    },
+    {
+      "id": 37,
+      "category": "FAMILY",
+      "section": "Muslim Personal Law",
+      "query": "What are grounds for divorce under Muslim law?",
+      "response": "Divorce under Muslim law includes: Talaq (by husband), Mubarat (mutual consent), Khula (by wife), Lian (false accusation), Faskh (judicial divorce). Triple Talaq declared unconstitutional by Supreme Court in 2017.",
+      "keywords": ["Muslim divorce", "Talaq", "Mubarat", "Khula", "triple talaq", "unconstitutional"]
+    },
+    {
+      "id": 38,
+      "category": "IPC",
+      "section": "Section 141",
+      "query": "What constitutes unlawful assembly under IPC?",
+      "response": "Section 141 IPC defines unlawful assembly as assembly of 5 or more persons with common object to commit offence, resist lawful authority, or use criminal force. Punishment under Section 143 is imprisonment up to 6 months or fine or both.",
+      "keywords": ["unlawful assembly", "141", "5 persons", "common object", "6 months", "143"]
+    },
+    {
+      "id": 39,
+      "category": "IT_ACT",
+      "section": "Digital Signature",
+      "query": "What is legal validity of digital signatures?",
+      "response": "Digital signatures under IT Act have same legal validity as handwritten signatures. Section 3 recognizes electronic records and digital signatures. Must be created using approved cryptographic method and verified by Certifying Authority.",
+      "keywords": ["digital signature", "legal validity", "section 3", "electronic records", "cryptographic", "Certifying Authority"]
+    },
+    {
+      "id": 40,
+      "category": "CRPC",
+      "section": "Section 319",
+      "query": "Can court add accused during trial?",
+      "response": "Section 319 CrPC allows court to proceed against person not named as accused if evidence shows involvement in offence. Court can direct investigation against such person or add as accused if sufficient evidence available.",
+      "keywords": ["add accused", "319", "during trial", "evidence", "investigation", "sufficient evidence"]
+    },
+    {
+      "id": 41,
+      "category": "CONSUMER",
+      "section": "Misleading Advertisements",
+      "query": "What action can be taken against misleading advertisements?",
+      "response": "Under Consumer Protection Act, misleading advertisements can attract penalty up to 10 lakh for first violation, up to 50 lakh for subsequent violations. CCPA can prohibit endorser from endorsing product for up to 3 years.",
+      "keywords": ["misleading advertisements", "penalty", "10 lakh", "50 lakh", "CCPA", "endorser", "3 years"]
+    },
+    {
+      "id": 42,
+      "category": "PROPERTY",
+      "section": "Stamp Duty",
+      "query": "How is stamp duty calculated for property transactions?",
+      "response": "Stamp duty varies by state, typically 3-10% of property value. Calculated on market value or registered value, whichever higher. Women buyers often get reduced rates. Additional registration charges of 1-2% applicable.",
+      "keywords": ["stamp duty", "3-10%", "market value", "women buyers", "registration charges", "state wise"]
+    },
+    {
+      "id": 43,
+      "category": "FAMILY",
+      "section": "Guardianship",
+      "query": "Who can be appointed as guardian of minor child?",
+      "response": "Under Guardians and Wards Act 1890, natural guardian is father, then mother. Court can appoint any person as guardian considering welfare of minor. Guardian must be suitable person capable of taking care of minor's person and property.",
+      "keywords": ["guardian", "minor", "natural guardian", "father", "mother", "court appointment", "welfare"]
+    },
+    {
+      "id": 44,
+      "category": "IPC",
+      "section": "Section 294",
+      "query": "What is punishment for obscene acts and songs?",
+      "response": "Section 294 IPC deals with obscene acts and songs in public places. Punishment is imprisonment up to 3 months or fine or both. Covers singing, reciting, uttering obscene songs, ballads, words in public place.",
+      "keywords": ["obscene acts", "294", "public place", "3 months", "songs", "ballads"]
+    },
+    {
+      "id": 45,
+      "category": "IT_ACT",
+      "section": "Cybersecurity",
+      "query": "What are cybersecurity obligations for companies?",
+      "response": "Under IT Act and rules, companies must implement reasonable security practices, appoint data protection officer, conduct security audits, report cyber incidents to CERT-In within 6 hours, maintain data backup and recovery procedures.",
+      "keywords": ["cybersecurity", "reasonable security", "data protection officer", "CERT-In", "6 hours", "backup"]
+    },
+    {
+      "id": 46,
+      "category": "CRPC",
+      "section": "Section 125",
+      "query": "Can divorced woman claim maintenance under CrPC?",
+      "response": "Section 125 CrPC allows divorced woman to claim maintenance if she has not remarried and cannot maintain herself. Amount depends on husband's income and her reasonable requirements. Overrides personal laws.",
+      "keywords": ["divorced woman", "maintenance", "125", "not remarried", "reasonable requirements", "personal laws"]
+    },
+    {
+      "id": 47,
+      "category": "CONSUMER",
+      "section": "Service Deficiency",
+      "query": "What constitutes deficiency in service under Consumer Protection Act?",
+      "response": "Service deficiency includes fault, imperfection, shortcoming in quality, nature, manner of performance below standard, non-performance of service, delay in performance, charging excess amount than agreed upon.",
+      "keywords": ["service deficiency", "fault", "imperfection", "below standard", "non-performance", "delay", "excess charging"]
+    },
+    {
+      "id": 48,
+      "category": "PROPERTY",
+      "section": "Adverse Possession",
+      "query": "What is adverse possession of property?",
+      "response": "Adverse possession is acquisition of ownership through continuous, open, hostile possession for prescribed period (12 years for private property, 30 years for government property). Possession must be without owner's permission and with intention to possess.",
+      "keywords": ["adverse possession", "12 years", "30 years", "continuous possession", "hostile", "without permission"]
+    },
+    {
+      "id": 49,
+      "category": "FAMILY",
+      "section": "Succession Laws",
+      "query": "How is property inherited under Hindu Succession Act?",
+      "response": "Hindu Succession Act 1956 (amended 2005) gives equal inheritance rights to daughters. Class I heirs include spouse, children, mother. Property devolves simultaneously among Class I heirs. Sons and daughters have equal coparcenary rights in ancestral property.",
+      "keywords": ["Hindu Succession", "equal rights", "daughters", "Class I heirs", "coparcenary rights", "ancestral property"]
+    },
+    {
+      "id": 50,
+      "category": "IPC",
+      "section": "Section 504",
+      "query": "What is intentional insult to provoke breach of peace?",
+      "response": "Section 504 IPC deals with intentional insult to provoke breach of peace. Whoever intentionally insults and thereby gives provocation to person intending to cause or knowing likelihood of causing breach of peace, imprisonment up to 2 years or fine or both.",
+      "keywords": ["intentional insult", "504", "provoke", "breach of peace", "2 years", "fine"]
+    },
+    {
+      "id": 51,
+      "category": "IPC",
+      "section": "Section 279",
+      "query": "What is rash driving under IPC?",
+      "response": "Section 279 IPC deals with rash or negligent driving on public way. Punishment is imprisonment up to 6 months or fine up to 1000 rupees or both. Covers driving in manner so rash or negligent as to endanger human life.",
+      "keywords": ["rash driving", "279", "negligent", "6 months", "1000 rupees", "endanger life"]
+    },
+    {
+      "id": 52,
+      "category": "IPC",
+      "section": "Section 323",
+      "query": "What is simple hurt under IPC?",
+      "response": "Section 323 IPC defines simple hurt as voluntarily causing hurt not amounting to grievous hurt. Punishment is imprisonment up to 1 year or fine up to 1000 rupees or both. Hurt means bodily pain, disease or infirmity.",
+      "keywords": ["simple hurt", "323", "bodily pain", "1 year", "1000 rupees", "voluntarily"]
+    },
+    {
+      "id": 53,
+      "category": "IPC",
+      "section": "Section 324",
+      "query": "What is voluntarily causing hurt by dangerous weapons?",
+      "response": "Section 324 IPC deals with voluntarily causing hurt by dangerous weapons or means. Punishment is imprisonment up to 3 years or fine or both. Includes fire, heated substance, poison, corrosive substance.",
+      "keywords": ["dangerous weapons", "324", "fire", "poison", "3 years", "corrosive substance"]
+    },
+    {
+      "id": 54,
+      "category": "IPC",
+      "section": "Section 325",
+      "query": "What constitutes grievous hurt under IPC?",
+      "response": "Section 325 IPC defines grievous hurt as emasculation, permanent privation of sight/hearing, fracture of bone, tooth, permanent disfiguration. Punishment is imprisonment up to 7 years and fine.",
+      "keywords": ["grievous hurt", "325", "fracture", "disfiguration", "7 years", "permanent privation"]
+    },
+    {
+      "id": 55,
+      "category": "IPC",
+      "section": "Section 363",
+      "query": "What is kidnapping under IPC?",
+      "response": "Section 363 IPC defines kidnapping as taking or enticing person out of keeping of lawful guardian without consent, or taking minor out of India without consent of guardian. Punishment under Section 359 is imprisonment up to 7 years and fine.",
+      "keywords": ["kidnapping", "363", "lawful guardian", "minor", "7 years", "enticing"]
+    },
+    {
+      "id": 56,
+      "category": "IPC",
+      "section": "Section 366",
+      "query": "What is kidnapping of woman to compel marriage?",
+      "response": "Section 366 IPC deals with kidnapping, abducting or inducing woman to compel her marriage against will or knowing likely to be forced. Punishment is imprisonment up to 10 years and fine.",
+      "keywords": ["kidnapping woman", "366", "compel marriage", "against will", "10 years", "abducting"]
+    },
+    {
+      "id": 57,
+      "category": "IPC",
+      "section": "Section 377",
+      "query": "What was Section 377 about and its current status?",
+      "response": "Section 377 IPC criminalized unnatural offences including homosexual acts. Supreme Court in Navtej Singh Johar case (2018) decriminalized consensual homosexual acts between adults, striking down Section 377 partially.",
+      "keywords": ["377", "unnatural offences", "homosexual", "decriminalized", "Navtej Singh Johar", "consensual adults"]
+    },
+    {
+      "id": 58,
+      "category": "IPC",
+      "section": "Section 511",
+      "query": "What is punishment for attempting to commit offences?",
+      "response": "Section 511 IPC provides that whoever attempts to commit offence punishable with imprisonment shall be punished with imprisonment up to half of longest term provided for that offence, or fine, or both.",
+      "keywords": ["attempt", "511", "half punishment", "longest term", "imprisonment", "fine"]
+    },
+    {
+      "id": 59,
+      "category": "IPC",
+      "section": "Section 417",
+      "query": "What is punishment for cheating?",
+      "response": "Section 417 IPC prescribes punishment for cheating as imprisonment up to 1 year or fine or both. Cheating is defined in Section 415 as deceiving person fraudulently or dishonestly inducing to deliver property.",
+      "keywords": ["cheating", "417", "1 year", "deceiving", "fraudulently", "deliver property"]
+    },
+    {
+      "id": 60,
+      "category": "IPC",
+      "section": "Section 509",
+      "query": "What is word, gesture or act intended to insult modesty of woman?",
+      "response": "Section 509 IPC deals with word, gesture or act intended to insult modesty of woman. Punishment is simple imprisonment up to 1 year, or fine, or both. Also covers intrusion upon privacy of woman.",
+      "keywords": ["insult modesty", "509", "word gesture", "1 year", "privacy", "woman"]
+    },
+    {
+      "id": 61,
+      "category": "IT_ACT",
+      "section": "Section 66B",
+      "query": "What is punishment for receiving stolen computer resource?",
+      "response": "Section 66B IT Act deals with dishonestly receiving or retaining stolen computer resource or communication device. Punishment is imprisonment up to 3 years or fine up to 1 lakh or both.",
+      "keywords": ["stolen computer", "66B", "receiving", "communication device", "3 years", "1 lakh"]
+    },
+    {
+      "id": 62,
+      "category": "IT_ACT",
+      "section": "Section 66C",
+      "query": "What is identity theft under IT Act?",
+      "response": "Section 66C IT Act deals with identity theft - fraudulently using password, digital signature or unique identification of another person. Punishment is imprisonment up to 3 years and fine up to 1 lakh.",
+      "keywords": ["identity theft", "66C", "password", "digital signature", "unique identification", "3 years", "1 lakh"]
+    },
+    {
+      "id": 63,
+      "category": "IT_ACT",
+      "section": "Section 66D",
+      "query": "What is cheating by personation using computer resource?",
+      "response": "Section 66D IT Act covers cheating by personation using computer resource. Fraudulently representing as another person to cheat using communication device or computer resource. Punishment up to 3 years and fine up to 1 lakh.",
+      "keywords": ["cheating personation", "66D", "representing another", "communication device", "3 years", "1 lakh"]
+    },
+    {
+      "id": 64,
+      "category": "IT_ACT",
+      "section": "Section 66E",
+      "query": "What is violation of privacy under IT Act?",
+      "response": "Section 66E IT Act deals with violation of privacy. Capturing, publishing, transmitting image of private area of person without consent. Punishment is imprisonment up to 3 years or fine up to 2 lakh or both.",
+      "keywords": ["privacy violation", "66E", "private area", "without consent", "transmitting image", "3 years", "2 lakh"]
+    },
+    {
+      "id": 65,
+      "category": "IT_ACT",
+      "section": "Section 66F",
+      "query": "What is cyber terrorism under IT Act?",
+      "response": "Section 66F IT Act defines cyber terrorism as accessing computer resource to threaten unity, integrity, security, sovereignty of India or strike terror. Punishment is imprisonment up to life term.",
+      "keywords": ["cyber terrorism", "66F", "threaten unity", "strike terror", "sovereignty", "life term"]
+    },
+    {
+      "id": 66,
+      "category": "IT_ACT",
+      "section": "Section 67A",
+      "query": "What is punishment for publishing sexually explicit content?",
+      "response": "Section 67A IT Act deals with publishing sexually explicit act in electronic form. First conviction: imprisonment up to 5 years and fine up to 10 lakh. Subsequent conviction: imprisonment up to 7 years and fine up to 10 lakh.",
+      "keywords": ["sexually explicit", "67A", "electronic form", "5 years", "7 years", "10 lakh"]
+    },
+    {
+      "id": 67,
+      "category": "IT_ACT",
+      "section": "Section 67B",
+      "query": "What is punishment for child pornography?",
+      "response": "Section 67B IT Act deals with publishing child pornography in electronic form. First conviction: imprisonment up to 5 years and fine up to 10 lakh. Subsequent conviction: imprisonment up to 7 years and fine up to 10 lakh.",
+      "keywords": ["child pornography", "67B", "electronic form", "5 years", "7 years", "10 lakh"]
+    },
+    {
+      "id": 68,
+      "category": "IT_ACT",
+      "section": "Section 79",
+      "query": "What is safe harbor provision for intermediaries?",
+      "response": "Section 79 IT Act provides safe harbor to intermediaries if they don't initiate transmission, select receiver, modify information and follow due diligence. Must remove unlawful content upon government/court order within 36 hours.",
+      "keywords": ["safe harbor", "79", "intermediaries", "due diligence", "remove content", "36 hours"]
+    },
+    {
+      "id": 69,
+      "category": "CRPC",
+      "section": "Section 197",
+      "query": "Is sanction required to prosecute public servants?",
+      "response": "Section 197 CrPC requires prior sanction of government to prosecute public servant for acts done in official capacity. Exception exists for acts clearly outside official duty. Sanction protects bona fide official acts.",
+      "keywords": ["sanction", "197", "public servant", "official capacity", "government approval", "bona fide"]
+    },
+    {
+      "id": 70,
+      "category": "CRPC",
+      "section": "Section 155",
+      "query": "What information cannot be refused by police?",
+      "response": "Section 155 CrPC states that information about non-cognizable offence should not be investigated without magistrate's order. However, police cannot refuse to record information and must refer complainant to magistrate.",
+      "keywords": ["non-cognizable", "155", "magistrate order", "cannot refuse", "record information"]
+    },
+    {
+      "id": 71,
+      "category": "CRPC",
+      "section": "Section 438",
+      "query": "What is anticipatory bail?",
+      "response": "Section 438 CrPC provides for anticipatory bail when person apprehends arrest for non-bailable offence. High Court or Sessions Court can grant anticipatory bail with conditions. Not available for serious offences like murder, rape.",
+      "keywords": ["anticipatory bail", "438", "apprehends arrest", "High Court", "Sessions Court", "conditions"]
+    },
+    {
+      "id": 72,
+      "category": "CRPC",
+      "section": "Section 41A",
+      "query": "What is notice for appearance to accused?",
+      "response": "Section 41A CrPC requires police to issue notice to accused for appearance before making arrest for offences punishable up to 7 years. If accused complies, arrest not necessary unless required for investigation.",
+      "keywords": ["notice appearance", "41A", "7 years punishment", "complies", "arrest not necessary"]
+    },
+    {
+      "id": 73,
+      "category": "CRPC",
+      "section": "Section 173",
+      "query": "What is police report after investigation?",
+      "response": "Section 173 CrPC requires police to submit report to magistrate after investigation completion. Report should state whether offence committed, by whom, evidence collected. Copy to be given to accused.",
+      "keywords": ["police report", "173", "investigation completion", "magistrate", "evidence collected", "copy to accused"]
+    },
+    {
+      "id": 74,
+      "category": "CRPC",
+      "section": "Section 357",
+      "query": "What is compensation to victims?",
+      "response": "Section 357 CrPC empowers court to order compensation to victim from accused when passing sentence. Court can also order compensation from state if accused unable to pay. Amount should be reasonable.",
+      "keywords": ["compensation", "357", "victim", "court order", "state compensation", "reasonable amount"]
+    },
+    {
+      "id": 75,
+      "category": "CRPC",
+      "section": "Section 125",
+      "query": "What is procedure for maintenance order?",
+      "response": "Section 125 CrPC procedure: application to magistrate, summons to opposite party, evidence recording, interim maintenance possible, final order, appeal to Sessions Court within 30 days, execution through attachment of property/salary.",
+      "keywords": ["maintenance procedure", "125", "magistrate", "summons", "interim maintenance", "30 days appeal"]
+    },
+    {
+      "id": 76,
+      "category": "CONSUMER",
+      "section": "Jurisdiction",
+      "query": "Which consumer forum has jurisdiction over my complaint?",
+      "response": "Consumer forums jurisdiction: District forum up to 1 crore, State commission 1 crore to 10 crore, National commission above 10 crore. Territorial jurisdiction where complainant resides, opposite party business place, or cause of action arises.",
+      "keywords": ["jurisdiction", "District forum", "1 crore", "State commission", "10 crore", "National commission", "territorial"]
+    },
+    {
+      "id": 77,
+      "category": "CONSUMER",
+      "section": "Limitation Period",
+      "query": "What is time limit to file consumer complaint?",
+      "response": "Consumer complaint must be filed within 2 years from date when cause of action arose. Condonation of delay possible if sufficient cause shown. Time limit can be extended by 30 days for sufficient reason.",
+      "keywords": ["time limit", "2 years", "cause of action", "condonation of delay", "sufficient cause", "30 days extension"]
+    },
+    {
+      "id": 78,
+      "category": "CONSUMER",
+      "section": "Defective Goods",
+      "query": "What remedies are available for defective goods?",
+      "response": "Remedies for defective goods: replacement of goods, refund of price paid, removal of defects, compensation for loss/injury, punitive damages, discontinuation of unfair trade practice, corrective advertisement.",
+      "keywords": ["defective goods", "replacement", "refund", "remove defects", "compensation", "punitive damages", "corrective advertisement"]
+    },
+    {
+      "id": 79,
+      "category": "CONSUMER",
+      "section": "Medical Negligence",
+      "query": "Can medical negligence complaint be filed under Consumer Protection Act?",
+      "response": "Medical negligence complaint can be filed if patient paid for treatment (not free treatment). Must prove duty of care, breach of duty, resultant harm. Compensation available for pain, suffering, loss of income, medical expenses.",
+      "keywords": ["medical negligence", "paid treatment", "duty of care", "breach", "harm", "compensation", "pain suffering"]
+    },
+    {
+      "id": 80,
+      "category": "CONSUMER",
+      "section": "Appeal Process",
+      "query": "How to appeal consumer forum decision?",
+      "response": "Appeal procedure: District forum to State commission within 30 days, State commission to National commission within 30 days, National commission to Supreme Court within 30 days. Pre-deposit of awarded amount may be required.",
+      "keywords": ["appeal", "30 days", "State commission", "National commission", "Supreme Court", "pre-deposit"]
+    },
+    {
+      "id": 81,
+      "category": "PROPERTY",
+      "section": "Power of Attorney",
+      "query": "What is power of attorney in property transactions?",
+      "response": "Power of Attorney (POA) authorizes person to act on behalf of grantor. Special POA for specific transaction, General POA for multiple acts. Must be registered if property value exceeds Rs. 100. POA holder cannot create sub-POA unless authorized.",
+      "keywords": ["power of attorney", "POA", "special POA", "general POA", "registered", "Rs. 100", "sub-POA"]
+    },
+    {
+      "id": 82,
+      "category": "PROPERTY",
+      "section": "Easement Rights",
+      "query": "What are easement rights in property?",
+      "response": "Easement is right to use another's property for specific purpose like passage, drainage, light, air. Can be created by grant, prescription (20 years use), necessity. Easement rights run with land and bind subsequent owners.",
+      "keywords": ["easement", "passage", "drainage", "light air", "20 years", "prescription", "subsequent owners"]
+    },
+    {
+      "id": 83,
+      "category": "PROPERTY",
+      "section": "Joint Property",
+      "query": "What are rights in joint property ownership?",
+      "response": "Joint property ownership types: Joint tenancy (survivorship rights), Tenancy in common (specified shares), Coparcenary (Hindu joint family). Each owner can sell/mortgage share, seek partition. Majority decisions for management.",
+      "keywords": ["joint property", "joint tenancy", "survivorship", "tenancy in common", "coparcenary", "partition", "majority decisions"]
+    },
+    {
+      "id": 84,
+      "category": "PROPERTY",
+      "section": "Property Tax",
+      "query": "What is property tax and how is it calculated?",
+      "response": "Property tax is annual tax on real estate levied by municipal corporations. Calculated on Annual Rental Value (ARV) or Unit Area Value. Rates vary by city (0.5% to 2% of property value). Used for civic amenities.",
+      "keywords": ["property tax", "annual tax", "municipal corporations", "ARV", "Unit Area Value", "0.5% to 2%", "civic amenities"]
+    },
+    {
+      "id": 85,
+      "category": "PROPERTY",
+      "section": "Mortgage",
+      "query": "What are different types of property mortgages?",
+      "response": "Mortgage types: Simple mortgage (personal liability, no possession transfer), Mortgage by conditional sale, Usufructuary mortgage (mortgagee gets possession and rents), English mortgage (absolute transfer with reconveyance condition), Equitable mortgage.",
+      "keywords": ["mortgage types", "simple mortgage", "conditional sale", "usufructuary", "English mortgage", "equitable mortgage", "possession transfer"]
+    },
+    {
+      "id": 86,
+      "category": "PROPERTY",
+      "section": "Land Acquisition",
+      "query": "What is procedure for land acquisition by government?",
+      "response": "Land Acquisition Act 2013: Social Impact Assessment, preliminary notification, objections hearing, final notification, award determination. Compensation: 4 times market value (rural), 2 times (urban). Consent required: 80% (private), 70% (PPP).",
+      "keywords": ["land acquisition", "Social Impact Assessment", "4 times market value", "2 times urban", "80% consent", "70% PPP"]
+    },
+    {
+      "id": 87,
+      "category": "FAMILY",
+      "section": "Marriage Registration",
+      "query": "Is marriage registration mandatory in India?",
+      "response": "Marriage registration not mandatory but advisable for legal benefits. Hindu marriages can be registered under Hindu Marriage Act or Special Marriage Act. Required documents: age proof, address proof, photographs, witnesses. Registration within 30 days gets marriage certificate.",
+      "keywords": ["marriage registration", "not mandatory", "Hindu Marriage Act", "Special Marriage Act", "30 days", "marriage certificate"]
+    },
+    {
+      "id": 88,
+      "category": "FAMILY",
+      "section": "Alimony",
+      "query": "What factors determine alimony amount?",
+      "response": "Alimony factors: spouse's income and earning capacity, standard of living during marriage, duration of marriage, age and health, education and employability, property owned, misconduct. Court considers all circumstances for fair amount.",
+      "keywords": ["alimony factors", "income", "earning capacity", "standard of living", "marriage duration", "age health", "employability"]
+    },
+    {
+      "id": 89,
+      "category": "FAMILY",
+      "section": "Live-in Relationship",
+      "query": "What are legal rights in live-in relationships?",
+      "response": "Live-in relationships recognized by Supreme Court. Rights: maintenance under Section 125 CrPC if woman unable to maintain, property rights if contributed to acquisition, domestic violence protection. Children have same rights as legitimate children.",
+      "keywords": ["live-in relationship", "Supreme Court", "maintenance", "125 CrPC", "property rights", "domestic violence", "children rights"]
+    },
+    {
+      "id": 90,
+      "category": "FAMILY",
+      "section": "Child Support",
+      "query": "How is child support calculated in India?",
+      "response": "Child support factors: father's income, child's needs (education, medical, living), mother's income, standard of living. Generally 25-30% of father's income. Court considers reasonable expenses for child's welfare and proper upbringing.",
+      "keywords": ["child support", "father's income", "25-30%", "education medical", "reasonable expenses", "child welfare"]
+    },
+    {
+      "id": 91,
+      "category": "FAMILY",
+      "section": "Restitution of Conjugal Rights",
+      "query": "What is restitution of conjugal rights?",
+      "response": "Section 9 Hindu Marriage Act provides restitution of conjugal rights when spouse withdraws from society without reasonable excuse. Court can order spouse to return. However, decree cannot be executed forcibly due to constitutional concerns.",
+      "keywords": ["restitution conjugal rights", "section 9", "withdraws society", "reasonable excuse", "cannot execute forcibly", "constitutional"]
+    },
+    {
+      "id": 92,
+      "category": "FAMILY",
+      "section": "Parental Alienation",
+      "query": "What is parental alienation in custody cases?",
+      "response": "Parental alienation is when one parent influences child against other parent. Courts consider this harmful to child's welfare. May result in custody modification, counseling orders, restricted access for alienating parent. Child's best interest remains paramount.",
+      "keywords": ["parental alienation", "influence child", "harmful", "custody modification", "counseling", "best interest"]
+    },
+    {
+      "id": 93,
+      "category": "LABOUR",
+      "section": "Payment of Wages Act",
+      "query": "What are wage payment rules under Payment of Wages Act?",
+      "response": "Payment of Wages Act 1936: wages must be paid before 7th of next month for monthly employees, before 10th for others. No deduction except authorized ones. Delayed payment attracts compensation. Cash payment for wages below Rs. 1000.",
+      "keywords": ["wage payment", "7th next month", "10th", "no deduction", "compensation", "cash payment", "Rs. 1000"]
+    },
+    {
+      "id": 94,
+      "category": "LABOUR",
+      "section": "Minimum Wages Act",
+      "query": "How are minimum wages fixed in India?",
+      "response": "Minimum Wages Act 1948: Central/State governments fix minimum wages for scheduled employments. Revised every 5 years, reviewed every 2 years. Considers cost of living, working hours. Non-payment is criminal offence with imprisonment up to 6 months.",
+      "keywords": ["minimum wages", "scheduled employments", "5 years", "2 years", "cost of living", "6 months imprisonment"]
+    },
+    {
+      "id": 95,
+      "category": "LABOUR",
+      "section": "Industrial Disputes Act",
+      "query": "What is procedure for industrial disputes resolution?",
+      "response": "Industrial Disputes Act 1947: disputes resolved through conciliation, arbitration, adjudication. Conciliation officer attempts settlement. If failed, referred to Labour Court/Industrial Tribunal. 30 days notice required for strikes/lockouts.",
+      "keywords": ["industrial disputes", "conciliation", "arbitration", "Labour Court", "Industrial Tribunal", "30 days notice", "strikes lockouts"]
+    },
+    {
+      "id": 96,
+      "category": "LABOUR",
+      "section": "Provident Fund",
+      "query": "What are EPF (Employee Provident Fund) rules?",
+      "response": "EPF Act 1952: mandatory for establishments with 20+ employees. Employee contributes 12% of basic salary, employer contributes 12%. Maturity after 58 years or job change after 5 years. Partial withdrawal allowed for specific purposes.",
+      "keywords": ["EPF", "20+ employees", "12% contribution", "58 years", "5 years job change", "partial withdrawal"]
+    },
+    {
+      "id": 97,
+      "category": "LABOUR",
+      "section": "Maternity Benefit Act",
+      "query": "What are maternity leave benefits in India?",
+      "response": "Maternity Benefit Act 2017: 26 weeks paid maternity leave (18 weeks pre-delivery, 8 weeks post-delivery). For third child onwards: 12 weeks. Applies to establishments with 10+ employees. Medical bonus and nursing breaks also provided.",
+      "keywords": ["maternity leave", "26 weeks", "18 weeks pre", "8 weeks post", "third child 12 weeks", "10+ employees", "nursing breaks"]
+    },
+    {
+      "id": 98,
+      "category": "LABOUR",
+      "section": "Sexual Harassment",
+      "query": "What are workplace sexual harassment laws?",
+      "response": "Sexual Harassment Act 2013: mandatory Internal Complaints Committee for 10+ employees, Local Complaints Committee for smaller establishments. Inquiry within 90 days, report within 10 days. False complaints also punishable.",
+      "keywords": ["sexual harassment", "Internal Complaints Committee", "10+ employees", "90 days inquiry", "10 days report", "false complaints"]
+    },
+    {
+      "id": 99,
+      "category": "CONSTITUTIONAL",
+      "section": "Article 21",
+      "query": "What is right to life and personal liberty?",
+      "response": "Article 21 Constitution guarantees right to life and personal liberty. Includes right to live with dignity, privacy, clean environment, health, education. Cannot be deprived except by procedure established by law. Covers both procedural and substantive due process.",
+      "keywords": ["Article 21", "right to life", "personal liberty", "dignity", "privacy", "procedure established by law", "due process"]
+    },
+    {
+      "id": 100,
+      "category": "CONSTITUTIONAL",
+      "section": "Article 14",
+      "query": "What is right to equality before law?",
+      "response": "Article 14 guarantees equality before law and equal protection of laws. Prohibits discrimination, ensures equal treatment. Allows reasonable classification based on intelligible differentia having nexus with object. Applies to all persons, not just citizens.",
+      "keywords": ["Article 14", "equality before law", "equal protection", "reasonable classification", "intelligible differentia", "all persons"]
+    },
+    {
+      "id": 101,
+      "category": "CONTRACT",
+      "section": "Section 10",
+      "query": "What are essentials of a valid contract?",
+      "response": "Section 10 Indian Contract Act states essentials of valid contract: free consent of competent parties, lawful consideration and object, not expressly declared void. Contract must have offer, acceptance, consideration, capacity, free consent, lawful object.",
+      "keywords": ["valid contract", "free consent", "competent parties", "lawful consideration", "offer acceptance", "capacity"]
+    },
+    {
+      "id": 102,
+      "category": "CONTRACT",
+      "section": "Section 2(h)",
+      "query": "What constitutes a contract under Indian Contract Act?",
+      "response": "Section 2(h) defines contract as agreement enforceable by law. Agreement becomes contract when it creates legal obligations. Must satisfy all essentials under Section 10 to be legally enforceable in court.",
+      "keywords": ["contract definition", "agreement enforceable", "legal obligations", "section 10", "legally enforceable"]
+    },
+    {
+      "id": 103,
+      "category": "CONTRACT",
+      "section": "Section 73",
+      "query": "What is compensation for breach of contract?",
+      "response": "Section 73 provides compensation for loss or damage naturally arising from breach or which parties knew likely to result. Compensation should put injured party in position as if contract was performed. Remote and indirect losses not compensable.",
+      "keywords": ["breach compensation", "loss damage", "naturally arising", "injured party", "remote losses", "contract performed"]
+    },
+    {
+      "id": 104,
+      "category": "CONTRACT",
+      "section": "Section 14",
+      "query": "What is free consent under Contract Act?",
+      "response": "Section 14 defines free consent as consent not caused by coercion, undue influence, fraud, misrepresentation, or mistake. Consent obtained by these means is not free and contract becomes voidable at option of affected party.",
+      "keywords": ["free consent", "coercion", "undue influence", "fraud", "misrepresentation", "mistake", "voidable"]
+    },
+    {
+      "id": 105,
+      "category": "CONTRACT",
+      "section": "Section 124",
+      "query": "What is contract of guarantee?",
+      "response": "Section 124 defines guarantee as contract to perform promise or discharge liability of third person in case of default. Involves surety (guarantor), principal debtor, and creditor. Surety's liability is coextensive with principal debtor.",
+      "keywords": ["guarantee", "surety", "principal debtor", "creditor", "default", "coextensive liability"]
+    },
+    {
+      "id": 106,
+      "category": "EVIDENCE",
+      "section": "Section 3",
+      "query": "What is evidence under Indian Evidence Act?",
+      "response": "Section 3 Evidence Act defines evidence as oral and documentary evidence. Oral evidence includes statements made by witnesses before court. Documentary evidence includes documents produced for court inspection. Evidence must be relevant to be admissible.",
+      "keywords": ["evidence definition", "oral evidence", "documentary evidence", "witnesses", "court inspection", "relevant", "admissible"]
+    },
+    {
+      "id": 107,
+      "category": "EVIDENCE",
+      "section": "Section 32",
+      "query": "When are dying declarations admissible?",
+      "response": "Section 32 Evidence Act makes dying declaration admissible when person who made it is dead and statement relates to cause of death or circumstances leading to death. Must be made when person believed death was imminent and had given up hope of recovery.",
+      "keywords": ["dying declaration", "person dead", "cause of death", "death imminent", "given up hope", "recovery"]
+    },
+    {
+      "id": 108,
+      "category": "EVIDENCE",
+      "section": "Section 118",
+      "query": "Who is competent to testify as witness?",
+      "response": "Section 118 states all persons are competent to testify unless court considers them incapable of understanding questions or giving rational answers due to tender age, extreme old age, disease, or any other cause.",
+      "keywords": ["competent witness", "all persons", "incapable understanding", "tender age", "extreme old age", "disease", "rational answers"]
+    },
+    {
+      "id": 109,
+      "category": "EVIDENCE",
+      "section": "Section 165",
+      "query": "What are powers of judge during trial?",
+      "response": "Section 165 empowers judge to ask any question in any form at any time, order production of any document or thing, and recall and re-examine any witness. Judge can intervene to elicit truth and ensure fair trial.",
+      "keywords": ["judge powers", "ask questions", "production documents", "recall witness", "re-examine", "elicit truth", "fair trial"]
+    },
+    {
+      "id": 110,
+      "category": "CIVIL",
+      "section": "Order 39 CPC",
+      "query": "When can temporary injunction be granted?",
+      "response": "Order 39 CPC allows temporary injunction when property in dispute is in danger of being wasted, damaged, alienated, or when defendant threatens to dispossess plaintiff or cause irreparable injury. Balance of convenience must favor plaintiff.",
+      "keywords": ["temporary injunction", "property danger", "wasted damaged", "alienated", "dispossess", "irreparable injury", "balance convenience"]
+    },
+    {
+      "id": 111,
+      "category": "CIVIL",
+      "section": "Section 9 CPC",
+      "query": "What is jurisdiction of civil courts?",
+      "response": "Section 9 CPC gives civil courts jurisdiction to try all suits of civil nature except suits expressly or impliedly barred. Civil court has inherent jurisdiction unless specifically excluded by statute.",
+      "keywords": ["civil court jurisdiction", "civil nature", "expressly barred", "impliedly barred", "inherent jurisdiction", "excluded by statute"]
+    },
+    {
+      "id": 112,
+      "category": "CIVIL",
+      "section": "Section 96 CPC",
+      "query": "What is appeal from original decree?",
+      "response": "Section 96 CPC provides right of appeal from every decree passed by court of first instance. Appeal lies to court authorized to hear appeals. Must be filed within prescribed limitation period with court fees.",
+      "keywords": ["appeal", "original decree", "first instance", "authorized court", "limitation period", "court fees"]
+    },
+    {
+      "id": 113,
+      "category": "BANKING",
+      "section": "SARFAESI Act",
+      "query": "What is SARFAESI Act for loan recovery?",
+      "response": "SARFAESI Act 2002 allows secured creditors to recover dues without court intervention. Bank can take possession of secured assets, manage and sell them after 60 days notice. Applies to loans above 1 lakh with 20% or more NPA.",
+      "keywords": ["SARFAESI", "loan recovery", "secured creditors", "60 days notice", "1 lakh", "20% NPA", "sell assets"]
+    },
+    {
+      "id": 114,
+      "category": "BANKING",
+      "section": "Banking Ombudsman",
+      "query": "How to file complaint with Banking Ombudsman?",
+      "response": "Banking Ombudsman is grievance redressal mechanism for bank customers. Complaint can be filed if bank doesn't resolve within 30 days or customer not satisfied. No fee required. Ombudsman can award compensation up to 20 lakh.",
+      "keywords": ["Banking Ombudsman", "grievance redressal", "30 days", "no fee", "20 lakh compensation", "bank customers"]
+    },
+    {
+      "id": 115,
+      "category": "BANKING",
+      "section": "KYC Norms",
+      "query": "What are KYC requirements for bank accounts?",
+      "response": "KYC (Know Your Customer) norms require identity proof, address proof, and photograph for account opening. Periodic updation required. Enhanced due diligence for high-risk customers. Non-compliance can lead to account freezing.",
+      "keywords": ["KYC", "identity proof", "address proof", "photograph", "periodic updation", "enhanced due diligence", "account freezing"]
+    },
+    {
+      "id": 116,
+      "category": "TAX",
+      "section": "Section 80C",
+      "query": "What investments qualify for Section 80C deduction?",
+      "response": "Section 80C allows deduction up to 1.5 lakh for investments in PPF, ELSS, life insurance premium, NSC, tax saving FD, home loan principal, tuition fees, stamp duty and registration charges.",
+      "keywords": ["80C deduction", "1.5 lakh", "PPF", "ELSS", "life insurance", "NSC", "home loan principal", "tuition fees"]
+    },
+    {
+      "id": 117,
+      "category": "TAX",
+      "section": "Section 234A",
+      "query": "What is interest for delay in filing income tax return?",
+      "response": "Section 234A levies interest at 1% per month for delay in filing return after due date. Interest calculated from due date till date of filing. Minimum interest is Rs. 1000 if tax liability exists.",
+      "keywords": ["234A", "1% per month", "delay filing", "due date", "minimum Rs. 1000", "tax liability"]
+    },
+    {
+      "id": 118,
+      "category": "TAX",
+      "section": "GST Registration",
+      "query": "When is GST registration mandatory?",
+      "response": "GST registration mandatory if turnover exceeds 20 lakh (10 lakh for special category states), inter-state supply, online sales, specific businesses like restaurants. Voluntary registration allowed below threshold for input tax credit benefits.",
+      "keywords": ["GST registration", "20 lakh turnover", "10 lakh special states", "inter-state supply", "online sales", "voluntary registration"]
+    },
+    {
+      "id": 119,
+      "category": "COMPANY",
+      "section": "Section 2(20)",
+      "query": "What is definition of company under Companies Act?",
+      "response": "Section 2(20) defines company as incorporated under Companies Act or previous company laws. Has separate legal entity, perpetual succession, common seal, limited liability, and can sue or be sued in its own name.",
+      "keywords": ["company definition", "incorporated", "separate legal entity", "perpetual succession", "common seal", "limited liability"]
+    },
+    {
+      "id": 120,
+      "category": "COMPANY",
+      "section": "Section 149",
+      "query": "What is composition of Board of Directors?",
+      "response": "Section 149 requires minimum 3 directors for public company, 2 for private company. At least 1/3rd must be independent directors for listed companies. Maximum 15 directors unless special resolution passed. Woman director mandatory for specified companies.",
+      "keywords": ["Board composition", "minimum 3 directors", "1/3rd independent", "maximum 15", "woman director", "special resolution"]
+    },
+    {
+      "id": 121,
+      "category": "COMPANY",
+      "section": "Section 135",
+      "query": "What is Corporate Social Responsibility (CSR)?",
+      "response": "Section 135 mandates CSR for companies with net worth ≥500 crore, turnover ≥1000 crore, or net profit ≥5 crore. Must spend 2% of average net profit of preceding 3 years on CSR activities. CSR committee required.",
+      "keywords": ["CSR", "500 crore net worth", "1000 crore turnover", "5 crore profit", "2% spending", "CSR committee"]
+    },
+    {
+      "id": 122,
+      "category": "ENVIRONMENT",
+      "section": "Environment Protection Act",
+      "query": "What are powers under Environment Protection Act?",
+      "response": "Environment Protection Act 1986 empowers Central Government to take measures for environmental protection, set standards for emissions/discharge, restrict industrial locations, and provide for environmental impact assessment. Violation punishable with imprisonment up to 5 years.",
+      "keywords": ["Environment Protection", "emission standards", "industrial restrictions", "environmental impact", "5 years imprisonment"]
+    },
+    {
+      "id": 123,
+      "category": "ENVIRONMENT",
+      "section": "Water Pollution",
+      "query": "What is punishment for water pollution?",
+      "response": "Water (Prevention and Control of Pollution) Act 1974 prohibits discharge of pollutants without consent. First offense: imprisonment up to 3 months and/or fine up to 10,000. Subsequent offense: imprisonment up to 6 months and/or fine up to 25,000.",
+      "keywords": ["water pollution", "discharge pollutants", "consent", "3 months", "10,000 fine", "6 months", "25,000 fine"]
+    },
+    {
+      "id": 124,
+      "category": "ENVIRONMENT",
+      "section": "Forest Rights Act",
+      "query": "What are forest rights of tribal communities?",
+      "response": "Forest Rights Act 2006 recognizes forest rights of forest dwelling scheduled tribes and traditional forest dwellers. Rights include habitation, cultivation, grazing, fishing, collection of minor forest produce. Claims decided by Gram Sabha.",
+      "keywords": ["forest rights", "scheduled tribes", "forest dwellers", "habitation cultivation", "grazing fishing", "minor forest produce", "Gram Sabha"]
+    },
+    {
+      "id": 125,
+      "category": "IPR",
+      "section": "Patents Act",
+      "query": "What can be patented under Patents Act?",
+      "response": "Patents Act 1970 allows patenting of new inventions involving inventive step and industrial application. Excludes mathematical methods, business methods, computer programs per se, traditional knowledge. Patent term is 20 years from filing date.",
+      "keywords": ["patent", "new inventions", "inventive step", "industrial application", "excludes business methods", "20 years"]
+    },
+    {
+      "id": 126,
+      "category": "IPR",
+      "section": "Copyright Act",
+      "query": "What is duration of copyright protection?",
+      "response": "Copyright Act 1957 provides copyright protection for life of author plus 60 years. For anonymous works, cinematograph films, sound recordings: 60 years from publication. Government works: 60 years from publication. No copyright in ideas, only expression.",
+      "keywords": ["copyright duration", "life plus 60 years", "anonymous works", "cinematograph 60 years", "government works", "expression not ideas"]
+    },
+    {
+      "id": 127,
+      "category": "IPR",
+      "section": "Trade Marks Act",
+      "query": "How to register a trademark?",
+      "response": "Trade Marks Act 1999: file application with registrar, examination by examiner, publication in trade marks journal, opposition period (4 months), registration if no opposition. Valid for 10 years, renewable. Must be distinctive and not deceptive.",
+      "keywords": ["trademark registration", "examination", "publication", "4 months opposition", "10 years", "renewable", "distinctive"]
+    },
+    {
+      "id": 128,
+      "category": "CRIMINAL",
+      "section": "Section 498",
+      "query": "What is enticing or taking away married woman?",
+      "response": "Section 498 IPC deals with enticing or taking away or detaining married woman with criminal intent. Punishment is imprisonment up to 2 years or fine or both. Intent must be criminal - to illicitly marry or for illicit intercourse.",
+      "keywords": ["enticing married woman", "498", "criminal intent", "2 years", "illicitly marry", "illicit intercourse"]
+    },
+    {
+      "id": 129,
+      "category": "CRIMINAL",
+      "section": "Section 375",
+      "query": "What is definition of rape under IPC?",
+      "response": "Section 375 IPC defines rape as sexual intercourse by man with woman without consent, against will, with consent obtained by fear/fraud, when she is intoxicated, or below 18 years. Penetration sufficient to constitute offence.",
+      "keywords": ["rape definition", "375", "without consent", "against will", "fear fraud", "intoxicated", "below 18", "penetration"]
+    },
+    {
+      "id": 130,
+      "category": "CRIMINAL",
+      "section": "Section 354A",
+      "query": "What is sexual harassment under IPC?",
+      "response": "Section 354A IPC defines sexual harassment as physical contact, demand for sexual favours, sexually coloured remarks, showing pornography, or any unwelcome sexually determined behaviour. Punishment is imprisonment up to 3 years and fine.",
+      "keywords": ["sexual harassment", "354A", "physical contact", "sexual favours", "coloured remarks", "pornography", "3 years"]
+    },
+    {
+      "id": 131,
+      "category": "CYBER",
+      "section": "Data Protection",
+      "query": "What are data protection obligations in India?",
+      "response": "IT Rules 2011 require reasonable security practices for sensitive personal data. Data Protection Bill (draft) proposes consent requirements, data localization, rights of data principals, penalties up to 4% of turnover. CERT-In guidelines mandate incident reporting.",
+      "keywords": ["data protection", "reasonable security", "sensitive data", "consent", "localization", "4% turnover", "incident reporting"]
+    },
+    {
+      "id": 132,
+      "category": "CYBER",
+      "section": "Online Fraud",
+      "query": "How to report online fraud?",
+      "response": "Online fraud can be reported to cybercrime.gov.in portal, local cyber cell, or police station. File complaint within reasonable time, preserve evidence like screenshots, transaction details. Banks must be informed immediately to block accounts/cards.",
+      "keywords": ["online fraud", "cybercrime.gov.in", "cyber cell", "preserve evidence", "screenshots", "transaction details", "block accounts"]
+    },
+    {
+      "id": 133,
+      "category": "CYBER",
+      "section": "Digital Evidence",
+      "query": "What is admissibility of digital evidence?",
+      "response": "Section 65B Evidence Act makes electronic evidence admissible if produced with certificate identifying electronic record, device used, and person handling it. Chain of custody must be established. Hash values used to prove integrity.",
+      "keywords": ["digital evidence", "65B", "electronic record", "certificate", "chain of custody", "hash values", "integrity"]
+    },
+    {
+      "id": 134,
+      "category": "MEDIA",
+      "section": "Press Freedom",
+      "query": "What are limits on press freedom in India?",
+      "response": "Article 19(1)(a) guarantees freedom of speech and expression including press freedom. Reasonable restrictions under 19(2): sovereignty, security, friendly relations, public order, decency, morality, contempt of court, defamation, incitement to offence.",
+      "keywords": ["press freedom", "19(1)(a)", "reasonable restrictions", "sovereignty", "public order", "contempt court", "defamation"]
+    },
+    {
+      "id": 135,
+      "category": "MEDIA",
+      "section": "Defamation",
+      "query": "What constitutes criminal defamation?",
+      "response": "Sections 499-502 IPC deal with criminal defamation. Making or publishing imputation concerning person intending to harm reputation is defamation. Exceptions include good faith opinion, public conduct of public servants, court proceedings. Punishment up to 2 years or fine.",
+      "keywords": ["criminal defamation", "499-502", "imputation", "harm reputation", "good faith", "public servants", "2 years"]
+    },
+    {
+      "id": 136,
+      "category": "ADMINISTRATIVE",
+      "section": "RTI Act",
+      "query": "How to file RTI application?",
+      "response": "RTI Act 2005: file application to concerned public authority with Rs. 10 fee, specify information sought, provide identity proof. Authority must respond within 30 days (48 hours for life/liberty matters). Appeal to appellate authority if unsatisfied.",
+      "keywords": ["RTI application", "Rs. 10 fee", "specify information", "30 days", "48 hours", "life liberty", "appellate authority"]
+    },
+    {
+      "id": 137,
+      "category": "ADMINISTRATIVE",
+      "section": "Public Interest Litigation",
+      "query": "What is Public Interest Litigation (PIL)?",
+      "response": "PIL allows any person to approach court for enforcement of public rights and interest. Relaxed locus standi rules. Can be filed for protection of environment, rights of marginalized, corruption in public office. Court can issue appropriate directions.",
+      "keywords": ["PIL", "public rights", "relaxed locus standi", "environment", "marginalized rights", "corruption", "court directions"]
+    },
+    {
+      "id": 138,
+      "category": "ADMINISTRATIVE",
+      "section": "Lokpal Act",
+      "query": "What is Lokpal and its powers?",
+      "response": "Lokpal and Lokayuktas Act 2013 establishes Lokpal for inquiry into corruption allegations against public servants. Has powers of investigation, prosecution, and attachment of assets. Covers Prime Minister (except security matters), Ministers, MPs, Group A officers.",
+      "keywords": ["Lokpal", "corruption allegations", "investigation prosecution", "attachment assets", "Prime Minister", "Ministers MPs", "Group A officers"]
+    },
+    {
+      "id": 139,
+      "category": "AGRICULTURE",
+      "section": "Land Ceiling",
+      "query": "What are land ceiling laws in India?",
+      "response": "Land ceiling laws vary by state, generally limit agricultural land holding per family. Excess land is acquired by government and redistributed to landless. Exemptions for certain categories like tea/coffee plantations. Ceiling ranges from 5-54 acres depending on soil type and state.",
+      "keywords": ["land ceiling", "agricultural land", "excess land acquired", "redistributed landless", "exemptions plantations", "5-54 acres"]
+    },
+    {
+      "id": 140,
+      "category": "AGRICULTURE",
+      "section": "APMC Act",
+      "query": "What is Agricultural Produce Marketing Committee?",
+      "response": "APMC Act regulates agricultural marketing through mandis. Farmers required to sell through APMC markets, pay market fee. Recent reforms allow direct sale to processors, contract farming. Some states have abolished APMC monopoly for free market access.",
+      "keywords": ["APMC", "agricultural marketing", "mandis", "market fee", "direct sale", "contract farming", "free market"]
+    },
+    {
+      "id": 141,
+      "category": "HEALTH",
+      "section": "Medical Negligence",
+      "query": "What constitutes medical negligence in India?",
+      "response": "Medical negligence is breach of duty of care resulting in harm to patient. Must prove: duty of care existed, breach of standard care, causation, damage. Bolam test applied - practice accepted by responsible body of medical opinion. Consumer courts and criminal courts have jurisdiction.",
+      "keywords": ["medical negligence", "duty of care", "breach standard", "causation damage", "Bolam test", "consumer courts", "criminal courts"]
+    },
+    {
+      "id": 142,
+      "category": "HEALTH",
+      "section": "Drug Controller",
+      "query": "What is role of Drug Controller in India?",
+      "response": "Drug Controller General of India (DCGI) regulates pharmaceutical industry under Drugs and Cosmetics Act 1940. Approves new drugs, clinical trials, imports, manufacturing licenses. State drug controllers handle retail and distribution. Violations attract imprisonment and penalties.",
+      "keywords": ["DCGI", "pharmaceutical regulation", "new drugs", "clinical trials", "manufacturing licenses", "state controllers", "imprisonment penalties"]
+    },
+    {
+      "id": 143,
+      "category": "EDUCATION",
+      "section": "RTE Act",
+      "query": "What is Right to Education Act?",
+      "response": "RTE Act 2009 provides free and compulsory education to children aged 6-14 years. Private schools must reserve 25% seats for economically weaker sections. Prohibits screening tests, capitation fee, corporal punishment. Student-teacher ratio prescribed.",
+      "keywords": ["RTE Act", "free compulsory education", "6-14 years", "25% reservation", "economically weaker", "no screening tests", "student-teacher ratio"]
+    },
+    {
+      "id": 144,
+      "category": "EDUCATION",
+      "section": "UGC Act",
+      "query": "What is University Grants Commission?",
+      "response": "UGC Act 1956 establishes University Grants Commission for coordination, determination and maintenance of standards of university education. Grants recognition to universities, provides funding, prescribes minimum qualifications for teachers, conducts inspections.",
+      "keywords": ["UGC", "university standards", "recognition", "funding", "teacher qualifications", "inspections", "coordination"]
+    },
+    {
+      "id": 145,
+      "category": "TRANSPORT",
+      "section": "Motor Vehicles Act",
+      "query": "What are penalties under new Motor Vehicles Act?",
+      "response": "Motor Vehicles Amendment Act 2019 increased penalties: driving without license Rs. 5000, drunk driving Rs. 10000, overspeeding Rs. 1000-2000, not wearing helmet Rs. 1000, seat belt violation Rs. 1000. Repeat offences attract higher penalties.",
+      "keywords": ["Motor Vehicles Act", "increased penalties", "without license 5000", "drunk driving 10000", "overspeeding 1000", "helmet seatbelt 1000"]
+    },
+    {
+      "id": 146,
+      "category": "TRANSPORT",
+      "section": "Third Party Insurance",
+      "query": "Is vehicle insurance mandatory in India?",
+      "response": "Third party insurance is mandatory under Motor Vehicles Act. Covers legal liability for death/injury to third party and property damage. Minimum coverage: death Rs. 15 lakh, permanent disability Rs. 7.5 lakh, property damage Rs. 1 lakh. Own damage insurance optional.",
+      "keywords": ["third party insurance", "mandatory", "death 15 lakh", "disability 7.5 lakh", "property damage 1 lakh", "own damage optional"]
+    },
+    {
+      "id": 147,
+      "category": "ARBITRATION",
+      "section": "Arbitration Act 2015",
+      "query": "What is arbitration process in India?",
+      "response": "Arbitration and Conciliation Act 2015: parties agree to arbitration clause, disputes referred to arbitral tribunal. Award must be made within 12 months (extendable 6 months). Limited court intervention. Award enforceable like court decree. Appeal to High Court on limited grounds.",
+      "keywords": ["arbitration", "arbitral tribunal", "12 months", "6 months extension", "limited intervention", "court decree", "High Court appeal"]
+    },
+    {
+      "id": 148,
+      "category": "ARBITRATION",
+      "section": "International Arbitration",
+      "query": "How is international arbitration conducted in India?",
+      "response": "International arbitration governed by Arbitration Act 2015. Seat in India makes it Indian arbitration subject to Indian courts. Foreign awards enforceable under New York Convention if India party to bilateral treaty. UNCITRAL rules often applied.",
+      "keywords": ["international arbitration", "seat in India", "Indian courts", "New York Convention", "bilateral treaty", "UNCITRAL rules"]
+    },
+    {
+      "id": 149,
+      "category": "INSOLVENCY",
+      "section": "IBC 2016",
+      "query": "What is Insolvency and Bankruptcy Code?",
+      "response": "IBC 2016 provides time-bound resolution of insolvency. Corporate Insolvency Resolution Process (CIRP) completed in 330 days. Resolution professional manages affairs. If no resolution, liquidation ordered. Creditors vote on resolution plans. Personal insolvency provisions exist.",
+      "keywords": ["IBC", "time-bound resolution", "CIRP", "330 days", "resolution professional", "liquidation", "creditors vote"]
+    },
+    {
+      "id": 150,
+      "category": "INSOLVENCY",
+      "section": "NCLT",
+      "query": "What is role of NCLT in insolvency proceedings?",
+      "response": "National Company Law Tribunal (NCLT) is adjudicating authority for corporate insolvency. Admits applications, appoints interim resolution professional, approves resolution plans, orders liquidation. Appeals lie to NCLAT. Fast-track process for companies with assets below 1 crore.",
+      "keywords": ["NCLT", "adjudicating authority", "admits applications", "resolution plans", "liquidation", "NCLAT appeals", "fast-track 1 crore"]
+    },
+    {
+      "id": 151,
+      "category": "SPORTS",
+      "section": "Sports Authority",
+      "query": "What is Sports Authority of India?",
+      "response": "Sports Authority of India (SAI) is apex national sports body under Ministry of Youth Affairs and Sports. Develops sports infrastructure, implements schemes for talent identification, provides training and coaching, manages sports complexes, conducts competitions.",
+      "keywords": ["SAI", "apex sports body", "sports infrastructure", "talent identification", "training coaching", "sports complexes", "competitions"]
+    },
+    {
+      "id": 152,
+      "category": "SPORTS",
+      "section": "Anti-Doping",
+      "query": "What are anti-doping rules in Indian sports?",
+      "response": "National Anti-Doping Agency (NADA) implements anti-doping program. Conducts in-competition and out-of-competition testing. Prohibited substances listed by WADA. Violations result in ineligibility periods: first violation 4 years, repeat violation lifetime ban. Therapeutic use exemptions available.",
+      "keywords": ["NADA", "anti-doping", "in-competition testing", "WADA", "4 years ineligibility", "lifetime ban", "therapeutic exemptions"]
+    },
+    {
+      "id": 153,
+      "category": "DISASTER",
+      "section": "Disaster Management Act",
+      "query": "What is Disaster Management Act 2005?",
+      "response": "Disaster Management Act 2005 provides for institutional mechanisms, prevention, mitigation, preparedness and response to disasters. Establishes National Disaster Management Authority (NDMA), State Disaster Management Authority (SDMA), and District Disaster Management Authority (DDMA).",
+      "keywords": ["Disaster Management", "institutional mechanisms", "prevention mitigation", "NDMA", "SDMA", "DDMA", "preparedness response"]
+    },
+    {
+      "id": 154,
+      "category": "DISASTER",
+      "section": "Emergency Powers",
+      "query": "What emergency powers exist during disasters?",
+      "response": "During disasters, authorities can requisition resources, evacuate areas, demolish unsafe structures, take control of transport, regulate prices, establish shelters. Violation of orders punishable with imprisonment up to 1 year or fine or both.",
+      "keywords": ["emergency powers", "requisition resources", "evacuate areas", "demolish structures", "control transport", "regulate prices", "1 year imprisonment"]
+    },
+    {
+      "id": 155,
+      "category": "TRIBAL",
+      "section": "Fifth Schedule",
+      "query": "What is Fifth Schedule of Constitution?",
+      "response": "Fifth Schedule provides for administration and control of scheduled areas and scheduled tribes. Governor has special powers through Tribes Advisory Council. State laws may not apply, Governor can make regulations. Aims to protect tribal interests and prevent exploitation.",
+      "keywords": ["Fifth Schedule", "scheduled areas", "scheduled tribes", "Governor powers", "Tribes Advisory Council", "regulations", "protect tribal interests"]
+    },
+  {
+    "id": 156,
+    "title": "Societies Registration Act",
+    "year": 1860,
+    "category": "Registration",
+    "description": "Act for registration of literary, scientific and charitable societies"
+  },
+  {
+    "id": 157,
+    "title": "Police Act",
+    "year": 1861,
+    "category": "Law and Order",
+    "description": "Act to reorganize the police and make it a more efficient instrument"
+  },
+  {
+    "id": 158,
+    "title": "Indian Fisheries Act",
+    "year": 1897,
+    "category": "Environment",
+    "description": "Act to regulate fishing and protect fish breeding"
+  },
+  {
+    "id": 159,
+    "title": "Lepers Act",
+    "year": 1898,
+    "category": "Health",
+    "description": "Act for segregation of lepers"
+  },
+  {
+    "id": 160,
+    "title": "Indian Merchandise Marks Act",
+    "year": 1889,
+    "category": "Trade",
+    "description": "Act relating to merchandise marks and trade descriptions"
+  },
+  {
+    "id": 161,
+    "title": "Legal Practitioners Act",
+    "year": 1879,
+    "category": "Legal",
+    "description": "Act to amend the law relating to legal practitioners"
+  },
+  {
+    "id": 162,
+    "title": "Cattle Trespass Act",
+    "year": 1871,
+    "category": "Agriculture",
+    "description": "Act to consolidate and amend the law relating to cattle trespass"
+  },
+  {
+    "id": 163,
+    "title": "Partition Act",
+    "year": 1893,
+    "category": "Property",
+    "description": "Act to improve the law relating to partition of property"
+  },
+  {
+    "id": 164,
+    "title": "Transfer of Property Act",
+    "year": 1882,
+    "category": "Property",
+    "description": "Act to define and amend the law relating to transfer of property"
+  },
+  {
+    "id": 165,
+    "title": "Easements Act",
+    "year": 1882,
+    "category": "Property",
+    "description": "Act to define and regulate easements"
+  },
+  {
+    "id": 166,
+    "title": "Trusts Act",
+    "year": 1882,
+    "category": "Property",
+    "description": "Act to define and regulate trusts and trustees"
+  },
+  {
+    "id": 167,
+    "title": "Negotiable Instruments Act",
+    "year": 1881,
+    "category": "Commercial",
+    "description": "Act to define and regulate negotiable instruments"
+  },
+  {
+    "id": 168,
+    "title": "Specific Relief Act",
+    "year": 1877,
+    "category": "Civil",
+    "description": "Act to define and regulate specific relief"
+  },
+  {
+    "id": 169,
+    "title": "Indian Evidence Act",
+    "year": 1872,
+    "category": "Evidence",
+    "description": "Act to consolidate, define and regulate evidence"
+  },
+  {
+    "id": 170,
+    "title": "Indian Contract Act",
+    "year": 1872,
+    "category": "Contract",
+    "description": "Act to define and regulate contracts"
+  },
+  {
+    "id": 171,
+    "title": "Indian Succession Act",
+    "year": 1925,
+    "category": "Succession",
+    "description": "Act to consolidate the law applicable to intestate succession"
+  },
+  {
+    "id": 172,
+    "title": "Hindu Marriage Act",
+    "year": 1955,
+    "category": "Personal Law",
+    "description": "Act to amend and codify Hindu marriage law"
+  },
+  {
+    "id": 173,
+    "title": "Hindu Succession Act",
+    "year": 1956,
+    "category": "Personal Law",
+    "description": "Act to amend and codify Hindu succession law"
+  },
+  {
+    "id": 174,
+    "title": "Hindu Minority and Guardianship Act",
+    "year": 1956,
+    "category": "Personal Law",
+    "description": "Act to amend Hindu minority and guardianship law"
+  },
+  {
+    "id": 175,
+    "title": "Hindu Adoptions and Maintenance Act",
+    "year": 1956,
+    "category": "Personal Law",
+    "description": "Act to amend Hindu adoption and maintenance law"
+  },
+  {
+    "id": 176,
+    "title": "Dowry Prohibition Act",
+    "year": 1961,
+    "category": "Social",
+    "description": "Act to prohibit dowry system"
+  },
+  {
+    "id": 177,
+    "title": "Maternity Benefit Act",
+    "year": 1961,
+    "category": "Labour",
+    "description": "Act to regulate maternity benefits for women employees"
+  },
+  {
+    "id": 178,
+    "title": "Apprentices Act",
+    "year": 1961,
+    "category": "Education",
+    "description": "Act to regulate apprenticeship training"
+  },
+  {
+    "id": 179,
+    "title": "Income Tax Act",
+    "year": 1961,
+    "category": "Tax",
+    "description": "Act to consolidate and regulate income tax"
+  },
+  {
+    "id": 180,
+    "title": "Wealth Tax Act",
+    "year": 1957,
+    "category": "Tax",
+    "description": "Act to provide for wealth tax"
+  },
+  {
+    "id": 181,
+    "title": "Gift Tax Act",
+    "year": 1958,
+    "category": "Tax",
+    "description": "Act to provide for gift tax"
+  },
+  {
+    "id": 182,
+    "title": "Central Excises and Salt Act",
+    "year": 1944,
+    "category": "Tax",
+    "description": "Act to consolidate excise and salt duties"
+  },
+  {
+    "id": 183,
+    "title": "Customs Act",
+    "year": 1962,
+    "category": "Tax",
+    "description": "Act to consolidate and amend customs law"
+  },
+  {
+    "id": 184,
+    "title": "Foreign Exchange Management Act",
+    "year": 1999,
+    "category": "Economic",
+    "description": "Act to consolidate foreign exchange law"
+  },
+  {
+    "id": 185,
+    "title": "Prevention of Money Laundering Act",
+    "year": 2002,
+    "category": "Financial Crime",
+    "description": "Act to prevent money laundering"
+  },
+  {
+    "id": 186,
+    "title": "Securitisation Act",
+    "year": 2002,
+    "category": "Banking",
+    "description": "Act for securitisation and reconstruction of financial assets"
+  },
+  {
+    "id": 187,
+    "title": "Credit Information Companies Act",
+    "year": 2005,
+    "category": "Banking",
+    "description": "Act to regulate credit information companies"
+  },
+  {
+    "id": 188,
+    "title": "Micro Finance Institutions Act",
+    "year": 2010,
+    "category": "Banking",
+    "description": "Act to regulate micro finance institutions"
+  },
+  {
+    "id": 189,
+    "title": "Payment and Settlement Systems Act",
+    "year": 2007,
+    "category": "Banking",
+    "description": "Act to regulate payment and settlement systems"
+  },
+  {
+    "id": 190,
+    "title": "Coinage Act",
+    "year": 2011,
+    "category": "Currency",
+    "description": "Act to regulate coinage in India"
+  },
+  {
+    "id": 191,
+    "title": "Prize Competition Act",
+    "year": 1955,
+    "category": "Gaming",
+    "description": "Act to regulate prize competitions"
+  },
+  {
+    "id": 192,
+    "title": "Lotteries (Regulation) Act",
+    "year": 1998,
+    "category": "Gaming",
+    "description": "Act to regulate lotteries"
+  },
+  {
+    "id": 193,
+    "title": "Public Gambling Act",
+    "year": 1867,
+    "category": "Gaming",
+    "description": "Act for the punishment of public gambling"
+  },
+  {
+    "id": 194,
+    "title": "Bengal Finance (Sales Tax) Act",
+    "year": 1941,
+    "category": "Tax",
+    "description": "Act to impose sales tax"
+  },
+  {
+    "id": 195,
+    "title": "Central Sales Tax Act",
+    "year": 1956,
+    "category": "Tax",
+    "description": "Act to formulate principles for sales tax"
+  },
+  {
+    "id": 196,
+    "title": "Goods and Services Tax Act",
+    "year": 2017,
+    "category": "Tax",
+    "description": "Act to levy goods and services tax"
+  },
+  {
+    "id": 197,
+    "title": "Inter-State Migrant Workmen Act",
+    "year": 1979,
+    "category": "Labour",
+    "description": "Act to regulate inter-state migrant workmen"
+  },
+  {
+    "id": 198,
+    "title": "Contract Labour Act",
+    "year": 1970,
+    "category": "Labour",
+    "description": "Act to regulate contract labour"
+  },
+  {
+    "id": 199,
+    "title": "Equal Remuneration Act",
+    "year": 1976,
+    "category": "Labour",
+    "description": "Act to provide equal remuneration"
+  },
+  {
+    "id": 200,
+    "title": "Bonded Labour System Act",
+    "year": 1976,
+    "category": "Labour",
+    "description": "Act to abolish bonded labour system"
+  },
+  {
+    "id": 201,
+    "title": "Building and Construction Workers Act",
+    "year": 1996,
+    "category": "Labour",
+    "description": "Act to regulate construction workers"
+  },
+  {
+    "id": 202,
+    "title": "Beedi and Cigar Workers Act",
+    "year": 1966,
+    "category": "Labour",
+    "description": "Act to provide welfare for beedi workers"
+  },
+  {
+    "id": 203,
+    "title": "Cine Workers Act",
+    "year": 1981,
+    "category": "Labour",
+    "description": "Act to regulate cinema workers"
+  },
+  {
+    "id": 204,
+    "title": "Dock Workers Act",
+    "year": 1986,
+    "category": "Labour",
+    "description": "Act to regulate dock workers"
+  },
+  {
+    "id": 205,
+    "title": "Mica Mines Labour Welfare Fund Act",
+    "year": 1946,
+    "category": "Labour",
+    "description": "Act for welfare of mica mine workers"
+  },
+  {
+    "id": 206,
+    "title": "Iron Ore Mines Labour Welfare Act",
+    "year": 1976,
+    "category": "Labour",
+    "description": "Act for welfare of iron ore mine workers"
+  },
+  {
+    "id": 207,
+    "title": "Limestone and Dolomite Mines Labour Welfare Act",
+    "year": 1972,
+    "category": "Labour",
+    "description": "Act for welfare of limestone mine workers"
+  },
+  {
+    "id": 208,
+    "title": "Sales Promotion Employees Act",
+    "year": 1976,
+    "category": "Labour",
+    "description": "Act to regulate sales promotion employees"
+  },
+  {
+    "id": 209,
+    "title": "Working Journalists Act",
+    "year": 1955,
+    "category": "Labour",
+    "description": "Act to regulate working journalists"
+  },
+  {
+    "id": 210,
+    "title": "Motor Transport Workers Act",
+    "year": 1961,
+    "category": "Labour",
+    "description": "Act to regulate motor transport workers"
+  },
+  {
+    "id": 211,
+    "title": "Plantations Labour Act",
+    "year": 1951,
+    "category": "Labour",
+    "description": "Act to regulate plantation labour"
+  },
+  {
+    "id": 212,
+    "title": "Shops and Establishments Act",
+    "year": 1953,
+    "category": "Labour",
+    "description": "Act to regulate shops and establishments"
+  },
+  {
+    "id": 213,
+    "title": "Weekly Holidays Act",
+    "year": 1942,
+    "category": "Labour",
+    "description": "Act to provide weekly holidays"
+  },
+  {
+    "id": 214,
+    "title": "Payment of Wages Act",
+    "year": 1936,
+    "category": "Labour",
+    "description": "Act to regulate payment of wages"
+  },
+  {
+    "id": 215,
+    "title": "Minimum Wages Act",
+    "year": 1948,
+    "category": "Labour",
+    "description": "Act to fix minimum wages"
+  },
+  {
+    "id": 216,
+    "title": "Payment of Bonus Act",
+    "year": 1965,
+    "category": "Labour",
+    "description": "Act to provide for payment of bonus"
+  },
+  {
+    "id": 217,
+    "title": "Payment of Gratuity Act",
+    "year": 1972,
+    "category": "Labour",
+    "description": "Act to provide for payment of gratuity"
+  },
+  {
+    "id": 218,
+    "title": "Employees Provident Fund Act",
+    "year": 1952,
+    "category": "Labour",
+    "description": "Act to provide for provident fund"
+  },
+  {
+    "id": 219,
+    "title": "Employees State Insurance Act",
+    "year": 1948,
+    "category": "Labour",
+    "description": "Act to provide for state insurance"
+  },
+  {
+    "id": 220,
+    "title": "Workmen's Compensation Act",
+    "year": 1923,
+    "category": "Labour",
+    "description": "Act to provide compensation to workmen"
+  },
+  {
+    "id": 221,
+    "title": "Fatal Accidents Act",
+    "year": 1855,
+    "category": "Tort",
+    "description": "Act to compensate for fatal accidents"
+  },
+  {
+    "id": 222,
+    "title": "Carriage by Air Act",
+    "year": 1972,
+    "category": "Transport",
+    "description": "Act to regulate air carriage"
+  },
+  {
+    "id": 223,
+    "title": "Railways Act",
+    "year": 1989,
+    "category": "Transport",
+    "description": "Act to consolidate railway laws"
+  },
+  {
+    "id": 224,
+    "title": "Indian Railways Act",
+    "year": 1890,
+    "category": "Transport",
+    "description": "Act to consolidate railway legislation"
+  },
+  {
+    "id": 225,
+    "title": "Motor Vehicles Act",
+    "year": 1988,
+    "category": "Transport",
+    "description": "Act to consolidate motor vehicle laws"
+  },
+  {
+    "id": 226,
+    "title": "Road Transport Corporation Act",
+    "year": 1950,
+    "category": "Transport",
+    "description": "Act to provide for road transport corporations"
+  },
+  {
+    "id": 227,
+    "title": "Merchant Shipping Act",
+    "year": 1958,
+    "category": "Transport",
+    "description": "Act to consolidate merchant shipping law"
+  },
+  {
+    "id": 228,
+    "title": "Inland Vessels Act",
+    "year": 1917,
+    "category": "Transport",
+    "description": "Act to consolidate inland vessel navigation"
+  },
+  {
+    "id": 229,
+    "title": "Major Port Trusts Act",
+    "year": 1963,
+    "category": "Transport",
+    "description": "Act to provide for major port trusts"
+  },
+  {
+    "id": 230,
+    "title": "Indian Ports Act",
+    "year": 1908,
+    "category": "Transport",
+    "description": "Act to consolidate port laws"
+  },
+  {
+    "id": 231,
+    "title": "Aircraft Act",
+    "year": 1934,
+    "category": "Transport",
+    "description": "Act to provide for aircraft regulation"
+  },
+  {
+    "id": 232,
+    "title": "Carriage by Road Act",
+    "year": 2007,
+    "category": "Transport",
+    "description": "Act to regulate carriage by road"
+  },
+  {
+    "id": 233,
+    "title": "Public Liability Insurance Act",
+    "year": 1991,
+    "category": "Insurance",
+    "description": "Act to provide public liability insurance"
+  },
+  {
+    "id": 234,
+    "title": "Insurance Act",
+    "year": 1938,
+    "category": "Insurance",
+    "description": "Act to consolidate insurance law"
+  },
+  {
+    "id": 235,
+    "title": "Life Insurance Corporation Act",
+    "year": 1956,
+    "category": "Insurance",
+    "description": "Act to establish LIC"
+  },
+  {
+    "id": 236,
+    "title": "General Insurance Business Act",
+    "year": 1972,
+    "category": "Insurance",
+    "description": "Act to provide for general insurance"
+  },
+  {
+    "id": 237,
+    "title": "Insurance Regulatory Authority Act",
+    "year": 1999,
+    "category": "Insurance",
+    "description": "Act to establish IRDA"
+  },
+  {
+    "id": 238,
+    "title": "Marine Insurance Act",
+    "year": 1963,
+    "category": "Insurance",
+    "description": "Act to consolidate marine insurance law"
+  },
+  {
+    "id": 239,
+    "title": "Deposit Insurance Corporation Act",
+    "year": 1961,
+    "category": "Banking",
+    "description": "Act to provide deposit insurance"
+  },
+  {
+    "id": 240,
+    "title": "Export Credit Guarantee Corporation Act",
+    "year": 1957,
+    "category": "Banking",
+    "description": "Act to establish ECGC"
+  },
+  {
+    "id": 241,
+    "title": "Unit Trust of India Act",
+    "year": 1963,
+    "category": "Banking",
+    "description": "Act to establish UTI"
+  },
+  {
+    "id": 242,
+    "title": "Industrial Finance Corporation Act",
+    "year": 1948,
+    "category": "Banking",
+    "description": "Act to establish IFC"
+  },
+  {
+    "id": 243,
+    "title": "State Financial Corporations Act",
+    "year": 1951,
+    "category": "Banking",
+    "description": "Act to establish state financial corporations"
+  },
+  {
+    "id": 244,
+    "title": "Industrial Credit and Investment Corporation Act",
+    "year": 1955,
+    "category": "Banking",
+    "description": "Act to establish ICICI"
+  },
+  {
+    "id": 245,
+    "title": "Industrial Development Bank Act",
+    "year": 1964,
+    "category": "Banking",
+    "description": "Act to establish IDBI"
+  },
+  {
+    "id": 246,
+    "title": "National Housing Bank Act",
+    "year": 1987,
+    "category": "Banking",
+    "description": "Act to establish NHB"
+  },
+  {
+    "id": 247,
+    "title": "Export-Import Bank Act",
+    "year": 1981,
+    "category": "Banking",
+    "description": "Act to establish EXIM Bank"
+  },
+  {
+    "id": 248,
+    "title": "Small Industries Development Bank Act",
+    "year": 1989,
+    "category": "Banking",
+    "description": "Act to establish SIDBI"
+  },
+  {
+    "id": 249,
+    "title": "National Bank for Agriculture Act",
+    "year": 1981,
+    "category": "Banking",
+    "description": "Act to establish NABARD"
+  },
+  {
+    "id": 250,
+    "title": "Chit Funds Act",
+    "year": 1982,
+    "category": "Banking",
+    "description": "Act to regulate chit funds"
+  },
+  {
+    "id": 251,
+    "title": "Nidhi Companies Rules",
+    "year": 2014,
+    "category": "Banking",
+    "description": "Rules to regulate nidhi companies"
+  },
+  {
+    "id": 252,
+    "title": "Co-operative Societies Act",
+    "year": 1912,
+    "category": "Co-operative",
+    "description": "Act to regulate co-operative societies"
+  },
+  {
+    "id": 253,
+    "title": "Multi-State Co-operative Societies Act",
+    "year": 2002,
+    "category": "Co-operative",
+    "description": "Act to regulate multi-state co-operatives"
+  },
+  {
+    "id": 254,
+    "title": "Sick Industrial Companies Act",
+    "year": 1985,
+    "category": "Industrial",
+    "description": "Act for revival of sick industrial companies"
+  },
+  {
+    "id": 255,
+    "title": "Board for Industrial Financial Reconstruction Act",
+    "year": 1987,
+    "category": "Industrial",
+    "description": "Act to establish BIFR"
+  },
+  {
+    "id": 256,
+    "title": "Industries Development Act",
+    "year": 1951,
+    "category": "Industrial",
+    "description": "Act for development and regulation of industries"
+  },
+  {
+    "id": 257,
+    "title": "Essential Commodities Act",
+    "year": 1955,
+    "category": "Trade",
+    "description": "Act to control production and distribution"
+  },
+  {
+    "id": 258,
+    "title": "Standards of Weights and Measures Act",
+    "year": 1976,
+    "category": "Trade",
+    "description": "Act to establish uniform weights and measures"
+  },
+  {
+    "id": 259,
+    "title": "Bureau of Indian Standards Act",
+    "year": 1986,
+    "category": "Standards",
+    "description": "Act to establish BIS"
+  },
+  {
+    "id": 260,
+    "title": "Agricultural Produce Act",
+    "year": 2003,
+    "category": "Agriculture",
+    "description": "Act to promote marketing of agricultural produce"
+  },
+  {
+    "id": 261,
+    "title": "Prevention of Food Adulteration Act",
+    "year": 1954,
+    "category": "Food Safety",
+    "description": "Act to prevent food adulteration"
+  },
+  {
+    "id": 262,
+    "title": "Food Safety and Standards Act",
+    "year": 2006,
+    "category": "Food Safety",
+    "description": "Act to consolidate food safety laws"
+  },
+  {
+    "id": 263,
+    "title": "Agricultural Marketing Act",
+    "year": 1967,
+    "category": "Agriculture",
+    "description": "Act to regulate agricultural marketing"
+  },
+  {
+    "id": 264,
+    "title": "Seeds Act",
+    "year": 1966,
+    "category": "Agriculture",
+    "description": "Act to regulate seed quality"
+  },
+  {
+    "id": 265,
+    "title": "Fertilizers Control Order",
+    "year": 1985,
+    "category": "Agriculture",
+    "description": "Order to control fertilizer quality"
+  },
+  {
+    "id": 266,
+    "title": "Insecticides Act",
+    "year": 1968,
+    "category": "Agriculture",
+    "description": "Act to regulate insecticides"
+  },
+  {
+    "id": 267,
+    "title": "Plant Quarantine Act",
+    "year": 2003,
+    "category": "Agriculture",
+    "description": "Act to regulate plant imports"
+  },
+  {
+    "id": 268,
+    "title": "Protection of Plant Varieties Act",
+    "year": 2001,
+    "category": "Agriculture",
+    "description": "Act to protect plant varieties"
+  },
+  {
+    "id": 269,
+    "title": "Biological Diversity Act",
+    "year": 2002,
+    "category": "Environment",
+    "description": "Act to conserve biological diversity"
+  },
+  {
+    "id": 270,
+    "title": "Forest Rights Act",
+    "year": 2006,
+    "category": "Forest",
+    "description": "Act to recognize forest rights of tribal communities"
+  },
+  {
+    "id": 271,
+    "title": "Wild Life Protection Act",
+    "year": 1972,
+    "category": "Environment",
+    "description": "Act to protect wild life"
+  },
+  {
+    "id": 272,
+    "title": "Forest Conservation Act",
+    "year": 1980,
+    "category": "Environment",
+    "description": "Act to provide for conservation of forests"
+  },
+  {
+    "id": 273,
+    "title": "Environment Protection Act",
+    "year": 1986,
+    "category": "Environment",
+    "description": "Act to provide for protection of environment"
+  },
+  {
+    "id": 274,
+    "title": "Water Act",
+    "year": 1974,
+    "category": "Environment",
+    "description": "Act to prevent water pollution"
+  },
+  {
+    "id": 275,
+    "title": "Air Act",
+    "year": 1981,
+    "category": "Environment",
+    "description": "Act to prevent air pollution"
+  },
+  {
+    "id": 276,
+    "title": "Noise Pollution Rules",
+    "year": 2000,
+    "category": "Environment",
+    "description": "Rules to regulate noise pollution"
+  },
+  {
+    "id": 277,
+    "title": "Hazardous Waste Rules",
+    "year": 2008,
+    "category": "Environment",
+    "description": "Rules for management of hazardous waste"
+  },
+  {
+    "id": 278,
+    "title": "E-Waste Rules",
+    "year": 2016,
+    "category": "Environment",
+    "description": "Rules for e-waste management"
+  },
+  {
+    "id": 279,
+    "title": "Plastic Waste Management Rules",
+    "year": 2016,
+    "category": "Environment",
+    "description": "Rules for plastic waste management"
+  },
+  {
+    "id": 280,
+    "title": "Solid Waste Management Rules",
+    "year": 2016,
+    "category": "Environment",
+    "description": "Rules for solid waste management"
+  },
+  {
+    "id": 281,
+    "title": "Biomedical Waste Management Rules",
+    "year": 2016,
+    "category": "Environment",
+    "description": "Rules for biomedical waste management"
+  },
+  {
+    "id": 282,
+    "title": "Construction and Demolition Waste Rules",
+    "year": 2016,
+    "category": "Environment",
+    "description": "Rules for construction waste management"
+  },
+  {
+    "id": 283,
+    "title": "Coastal Regulation Zone Notification",
+    "year": 2011,
+    "category": "Environment",
+    "description": "Notification to regulate coastal development"
+  },
+  {
+    "id": 284,
+    "title": "Island Protection Zone Notification",
+    "year": 2011,
+    "category": "Environment",
+    "description": "Notification to protect island ecology"
+  },
+  {
+    "id": 285,
+    "title": "Environmental Impact Assessment Notification",
+    "year": 2006,
+    "category": "Environment",
+    "description": "Notification for environmental clearances"
+  },
+  {
+    "id": 286,
+    "title": "National Green Tribunal Act",
+    "year": 2010,
+    "category": "Environment",
+    "description": "Act to establish National Green Tribunal"
+  },
+  {
+    "id": 287,
+    "title": "Public Interest Disclosure Act",
+    "year": 2013,
+    "category": "Transparency",
+    "description": "Act to protect whistleblowers"
+  },
+  {
+    "id": 288,
+    "title": "Lokpal and Lokayuktas Act",
+    "year": 2013,
+    "category": "Anti-Corruption",
+    "description": "Act to establish Lokpal and Lokayuktas"
+  },
+  {
+    "id": 289,
+    "title": "Prevention of Corruption Act",
+    "year": 1988,
+    "category": "Anti-Corruption",
+    "description": "Act to prevent corruption"
+  },
+  {
+    "id": 290,
+    "title": "Benami Transactions Act",
+    "year": 1988,
+    "category": "Property",
+    "description": "Act to prohibit benami transactions"
+  },
+  {
+    "id": 291,
+    "title": "Black Money Act",
+    "year": 2015,
+    "category": "Tax",
+    "description": "Act to deal with black money"
+  },
+  {
+    "id": 292,
+    "title": "Fugitive Economic Offenders Act",
+    "year": 2018,
+    "category": "Criminal",
+    "description": "Act to deal with fugitive economic offenders"
+  },
+  {
+    "id": 293,
+    "title": "Companies Act",
+    "year": 2013,
+    "category": "Corporate",
+    "description": "Act to regulate companies"
+  },
+  {
+    "id": 294,
+    "title": "Limited Liability Partnership Act",
+    "year": 2008,
+    "category": "Corporate",
+    "description": "Act to provide for limited liability partnerships"
+  },
+  {
+    "id": 295,
+    "title": "Partnership Act",
+    "year": 1932,
+    "category": "Corporate",
+    "description": "Act to define and regulate partnerships"
+  }
+    ]
+  }

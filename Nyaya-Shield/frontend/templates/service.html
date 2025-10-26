@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Legal Services | Nyaya Shield</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0d0d0d;
+      color: white;
+      padding: 40px;
+    }
+    h1 {
+      text-align: center;
+      color: #d4af37;
+    }
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      max-width: 1100px;
+      margin: 40px auto;
+    }
+    .service-card {
+      background-color: #1a1a1a;
+      border: 2px solid #d4af37;
+      border-radius: 12px;
+      padding: 20px;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+      text-decoration: none;
+      color: white;
+      display: block;
+    }
+    .service-card:hover {
+      transform: translateY(-5px);
+    }
+    .service-card h3 {
+      color: #d4af37;
+      margin-bottom: 10px;
+    }
+    .service-card p {
+      color: #ccc;
+      font-size: 0.95rem;
+    }
+    .back-link {
+      text-align: center;
+      display: block;
+      margin-top: 30px;
+      color: #d4af37;
+      text-decoration: none;
+    }
+    .back-link:hover {
+      text-decoration: underline;
+    }
+    
+    .chat-cta {
+      margin-top: 15px;
+      padding-top: 10px;
+      border-top: 1px solid #333;
+      color: #d4af37;
+      font-weight: 500;
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+    
+    .service-card:hover .chat-cta {
+      color: #f0c14b;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Explore Our Legal Services</h1>
+
+  <div class="service-grid">
+    <a class="service-card" href="{{ url_for('ipc_chat') }}">
+      <h3><i class="fas fa-gavel"></i> IPC</h3>
+      <p>Get information about Indian Penal Code sections and legal provisions.</p>
+      <div class="chat-cta">Chat about IPC &rarr;</div>
+    </a>
+    <a class="service-card" href="{{ url_for('crpc_chat') }}">
+      <h3><i class="fas fa-balance-scale"></i> CrPC</h3>
+      <p>Understand criminal procedures and your rights during legal processes.</p>
+      <div class="chat-cta">Chat about CrPC &rarr;</div>
+    </a>
+    <a class="service-card" href="{{ url_for('cyber_chat') }}">
+      <h3><i class="fas fa-shield-alt"></i> Cyber Law</h3>
+      <p>Learn about cyber crimes, digital rights, and IT Act provisions.</p>
+      <div class="chat-cta">Chat about Cyber Law &rarr;</div>
+    </a>
+    <a class="service-card" href="{{ url_for('family_chat') }}">
+      <h3><i class="fas fa-home"></i> Family Law</h3>
+      <p>Resolve issues around marriage, divorce, child custody, and more.</p>
+      <div class="chat-cta">Chat about Family Law &rarr;</div>
+    </a>
+    <a class="service-card" href="{{ url_for('property_chat') }}">
+      <h3><i class="fas fa-building"></i> Property Law</h3>
+      <p>Get help with land disputes, tenancy, inheritance, and ownership rights.</p>
+      <div class="chat-cta">Chat about Property Law &rarr;</div>
+    </a>
+    <a class="service-card" href="{{ url_for('consumer_chat') }}">
+      <h3><i class="fas fa-shopping-cart"></i> Consumer Law</h3>
+      <p>Understand your rights as a buyer and take action against unfair practices.</p>
+      <div class="chat-cta">Chat about Consumer Law &rarr;</div>
+    </a>
+  </div>
+
+  <a href="{{ url_for('home') }}" class="back-link">&larr; Back to Home Page</a>
+
+</body>
+</html>

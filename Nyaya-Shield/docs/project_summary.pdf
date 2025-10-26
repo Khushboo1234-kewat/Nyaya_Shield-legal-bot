@@ -1,0 +1,51 @@
+Nyaya‑Shield (Legal Bot) — Project Summary
+
+Overview
+Nyaya‑Shield is a legal Q&A chatbot that answers user queries using a TF‑IDF similarity model trained on combined Indian legal datasets. It optionally integrates an LLM layer for conversational polish (LLM is optional and can be disabled).
+
+Key Features
+- Trained TF‑IDF model over combined datasets (IndicLegalQA, Indian Laws, Court Cases, Constitutional/Legal texts, plus optional Law JSONs).
+- Fast similarity search to fetch the most relevant answers.
+- Enhanced NLP service providing category detection, lightweight intent, safety flags, and follow‑up suggestions.
+- Web app (Flask) and Terminal Chat client for testing.
+
+Architecture
+- Datasets: located under datasets/ with a combiner script (combine_datasets.py) that outputs combined_legal_dataset.csv, train_dataset.csv, validation_dataset.csv.
+- Training: backend/bot/train_model.py builds a TfidfVectorizer and computes question vectors; artifacts saved as chatbot_model.pkl and vectorizer.pkl.
+- Inference: backend/bot/bot_controller.py loads artifacts and performs cosine similarity to return best answers; backend/bot/nlp_service.py adds richer analysis and suggestions.
+- API/UI: backend/app.py exposes /api/chat; Terminal client in backend/bot/terminal_chat.py.
+
+Datasets Combined
+Core sources combined by combine_datasets.py:
+- IndicLegalQA Dataset_10K.json (Q&A)
+- indian_laws.json (queries and responses)
+- court_cases/data.csv ([INST] … [/INST] formatted)
+- court_cases/Text.csv (converted into explain‑style Q&A)
+Optional if present:
+- Indian_legal_consultant/data.csv and Text.csv
+- Law data set/*.json (categorized: ipc, crpc, it_act, consumer, family, property, general)
+
+Training Flow
+1) Combine datasets (outputs combined_legal_dataset.csv).
+2) Train TF‑IDF model (saves chatbot_model.pkl, vectorizer.pkl in backend/bot).
+3) Load artifacts at runtime; answer queries via cosine similarity over question vectors.
+
+How To Run (Windows)
+1) Create venv and install dependencies (from Nyaya‑Shield/backend):
+   - python -m venv venv
+   - venv\Scripts\activate
+   - pip install -r requirements.txt
+2) (Optional) Disable LLM if you don’t want Torch/HF:
+   - set ENABLE_LLM=false
+3) Combine datasets (from Nyaya‑Shield/datasets):
+   - python combine_datasets.py
+4) Train model (from Nyaya‑Shield/backend):
+   - python -m bot.train_model
+5) Run web app (from Nyaya‑Shield/backend):
+   - python app.py
+6) Terminal chat (from Nyaya‑Shield/backend):
+   - python -m bot.terminal_chat
+
+Notes
+- LLM dependencies are optional; disable via ENABLE_LLM=false for lightweight operation.
+- Response quality depends on dataset coverage and cleanliness; expand and refine datasets for best results.

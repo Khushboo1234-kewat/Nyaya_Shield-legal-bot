@@ -1,0 +1,58 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# Virtual Environments
+venv/
+env/
+ENV/
+backend/venv/
+
+# Flask
+instance/
+.webassets-cache
+
+# Environment variables
+.env
+*.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Model files (optional - remove if you want to track them)
+*.pkl
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.bak
+*.old
+
+# Test outputs
+test_results/
+coverage/
+
+# Documentation drafts (keep only official docs)
+*FIX*.md
+*GUIDE*.md
+*TEST*.md
+VERIFICATION_REPORT.md
+IMPLEMENTATION_SUMMARY.md
+YOUR_BOT_IS_READY.md
+READY_TO_TRAIN.md

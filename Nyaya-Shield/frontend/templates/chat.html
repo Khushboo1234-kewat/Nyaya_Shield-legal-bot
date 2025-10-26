@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chat with LegalBot</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0d0d0d;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+
+    header {
+      padding: 20px;
+      background-color: #1a1a1a;
+      text-align: center;
+      border-bottom: 1px solid #d4af37;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.5rem;
+      color: #d4af37;
+    }
+
+    .chat-container {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      overflow-y: auto;
+    }
+
+    .message {
+      max-width: 70%;
+      margin: 10px 0;
+      padding: 12px 16px;
+      border-radius: 16px;
+      font-size: 1rem;
+      line-height: 1.4;
+    }
+
+    .user {
+      align-self: flex-end;
+      background-color: #d4af37;
+      color: #0d0d0d;
+      border-bottom-right-radius: 4px;
+    }
+
+    .bot {
+      align-self: flex-start;
+      background-color: #2a2a2a;
+      border-left: 3px solid #d4af37;
+      color: #ffffff;
+      border-bottom-left-radius: 4px;
+    }
+
+    .input-area {
+      display: flex;
+      padding: 15px;
+      background-color: #1a1a1a;
+      border-top: 1px solid #d4af37;
+    }
+
+    .input-area input {
+      flex: 1;
+      padding: 12px;
+      border: none;
+      border-radius: 30px;
+      margin-right: 10px;
+      outline: none;
+      background-color: #2a2a2a;
+      color: white;
+    }
+
+    .input-area button {
+      padding: 12px 20px;
+      background-color: #d4af37;
+      color: #0d0d0d;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .input-area button:hover {
+      background-color: #b9962e;
+    }
+
+    .input-area button:disabled {
+      background-color: #666;
+      cursor: not-allowed;
+    }
+
+    .input-area input:disabled {
+      background-color: #1a1a1a;
+      cursor: not-allowed;
+    }
+
+    .typing {
+      opacity: 0.8;
+      font-style: italic;
+    }
+
+    .error {
+      border-left-color: #f44336 !important;
+      background-color: #2a1a1a !important;
+    }
+
+    .bot-response .main-answer {
+      margin-bottom: 8px;
+    }
+
+    .bot-response .confidence {
+      border-top: 1px solid #333;
+      padding-top: 8px;
+    }
+
+    .bot-response .recommendations ul {
+      list-style-type: disc;
+    }
+
+    .bot-response .recommendations li {
+      margin: 3px 0;
+    }
+
+    .top-right {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.login-btn {
+  background-color: #d4af37;
+  color: #0d0d0d;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #b9962e;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Nyaya Shield</h1>
+    <div class="top-right">
+        <button class="login-btn" onclick="location.href='login.html'">Login</button>
+    </div>
+  </header>
+
+  <div class="chat-container" id="chat">
+    <div class="message bot">Hello! I'm Law Bot. How can I assist you today?</div>
+  </div>
+
+  <div class="input-area">
+    <input type="text" id="userInput" placeholder="Type your message..." />
+    <button onclick="sendMessage()">Send</button>
+  </div>
+
+  <script>
+    let isProcessing = false;
+
+    function sendMessage() {
+      const input = document.getElementById("userInput");
+      const chat = document.getElementById("chat");
+
+      const userMsg = input.value.trim();
+      if (!userMsg || isProcessing) return;
+
+      // Display user message
+      const userDiv = document.createElement("div");
+      userDiv.className = "message user";
+      userDiv.innerText = userMsg;
+      chat.appendChild(userDiv);
+
+      // Clear input and disable while processing
+      input.value = "";
+      input.disabled = true;
+      isProcessing = true;
+
+      // Show typing indicator
+      const typingDiv = document.createElement("div");
+      typingDiv.className = "message bot typing";
+      typingDiv.innerHTML = "🤔 Analyzing your legal query...";
+      chat.appendChild(typingDiv);
+      chat.scrollTop = chat.scrollHeight;
+
+      // Make API call to backend
+      fetch('/api/chat', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          message: userMsg,
+          concise: true,
+          style: 'concise'
+        })
+      })
+      .then(response => response.json())
+      .then(data => {
+        // Remove typing indicator
+        chat.removeChild(typingDiv);
+
+        // Create bot response
+        const botDiv = document.createElement("div");
+        botDiv.className = "message bot";
+        
+        // Format the response with additional info
+        let responseHtml = `<div class="bot-response">
+          <div class="main-answer">${data.response}</div>`;
+        
+        if (data.confidence && data.confidence > 0) {
+          const confidencePercent = (data.confidence * 100).toFixed(1);
+          const confidenceColor = data.confidence > 0.7 ? '#4CAF50' : data.confidence > 0.4 ? '#FF9800' : '#F44336';
+          responseHtml += `<div class="confidence" style="color: ${confidenceColor}; font-size: 0.8em; margin-top: 8px;">
+            Confidence: ${confidencePercent}% | Category: ${data.category || 'General'}
+          </div>`;
+        }
+
+        if (data.recommendations && data.recommendations.length > 0) {
+          responseHtml += `<div class="recommendations" style="margin-top: 10px; font-size: 0.9em;">
+            <strong>💡 Recommendations:</strong>
+            <ul style="margin: 5px 0; padding-left: 20px;">`;
+          data.recommendations.slice(0, 3).forEach(rec => {
+            responseHtml += `<li>${rec}</li>`;
+          });
+          responseHtml += `</ul></div>`;
+        }
+
+        if (data.legal_terms && data.legal_terms.length > 0) {
+          responseHtml += `<div class="legal-terms" style="margin-top: 8px; font-size: 0.8em; color: #d4af37;">
+            <strong>📖 Legal Terms:</strong> ${data.legal_terms.slice(0, 5).join(', ')}
+          </div>`;
+        }
+
+        responseHtml += `</div>`;
+        botDiv.innerHTML = responseHtml;
+        chat.appendChild(botDiv);
+        chat.scrollTop = chat.scrollHeight;
+      })
+      .catch(error => {
+        // Remove typing indicator
+        if (chat.contains(typingDiv)) {
+          chat.removeChild(typingDiv);
+        }
+
+        // Show error message
+        const errorDiv = document.createElement("div");
+        errorDiv.className = "message bot error";
+        errorDiv.innerHTML = `❌ Sorry, I encountered an error: ${error.message}<br>
+          <small>Please try again or check if the server is running.</small>`;
+        chat.appendChild(errorDiv);
+        chat.scrollTop = chat.scrollHeight;
+      })
+      .finally(() => {
+        // Re-enable input
+        input.disabled = false;
+        input.focus();
+        isProcessing = false;
+      });
+    }
+
+    // Allow Enter key to send message
+    document.getElementById("userInput").addEventListener("keypress", function(event) {
+      if (event.key === "Enter" && !event.shiftKey) {
+        event.preventDefault();
+        sendMessage();
+      }
+    });
+
+    // Focus input on page load
+    window.onload = function() {
+      document.getElementById("userInput").focus();
+    };
+  </script>
+</body>
+</html>

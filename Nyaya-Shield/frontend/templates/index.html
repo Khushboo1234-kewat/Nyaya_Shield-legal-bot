@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nyaya Shield | Home</title>
+
+  <!-- Font Awesome and Fonts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Optional: External CSS (Flask static file path) -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background-color: #0d0d0d;
+      color: white;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #1a1a1a;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid #d4af37;
+    }
+
+    .navbar h1 {
+      margin: 0;
+      color: #d4af37;
+      font-size: 1.5rem;
+    }
+
+    .navbar .menu-links a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    .navbar .menu-links a:hover {
+      color: #d4af37;
+    }
+
+    /* Welcome Box */
+    .container {
+      text-align: center;
+      border: 2px solid #d4af37;
+      border-radius: 16px;
+      padding: 40px;
+      background-color: #1a1a1a;
+      box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
+      max-width: 600px;
+      width: 90%;
+      margin: 80px auto;
+      position: relative;
+    }
+
+    h2, h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      color: #d4af37;
+    }
+
+    p {
+      font-size: 1rem;
+      color: #cccccc;
+      margin-bottom: 30px;
+      line-height: 1.6;
+    }
+
+    .start-btn {
+      padding: 12px 30px;
+      font-size: 1rem;
+      background-color: #d4af37;
+      color: #0d0d0d;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .start-btn:hover {
+      background-color: #b9962e;
+    }
+
+    .top-right {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+
+    .login-btn {
+      background-color: #d4af37;
+      color: #0d0d0d;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 0.9rem;
+      transition: background-color 0.3s ease;
+    }
+
+    .login-btn:hover {
+      background-color: #b9962e;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 0.8rem;
+      color: #666;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Navbar -->
+  <div class="navbar">
+    <h1>NyayaShield</h1>
+    <div class="menu-links">
+      <a href="{{ url_for('home') }}">Home</a>
+      <a href="{{ url_for('services') }}">Services</a>
+      <a href="{{ url_for('login') }}">Login</a>
+      <a href="{{ url_for('register') }}">Register</a>
+    </div>
+  </div>
+
+  <!-- Welcome Box with Login -->
+  <div class="container">
+    <div class="top-right">
+      <a href="{{ url_for('login') }}" class="login-btn">Login</a>
+    </div>
+    <h1>Welcome to Nyaya Shield</h1>
+    <p>Your intelligent Law Bot is here to help.</p>
+  </div>
+
+  <footer>
+    &copy; 2025 Nyaya Shield. All rights reserved.
+  </footer>
+
+</body>
+</html>

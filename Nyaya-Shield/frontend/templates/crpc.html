@@ -1,0 +1,81 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CrPC | Nyaya Shield</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style> 
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #0d0d0d;
+    color: white;
+    padding: 40px;
+  }
+  header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  header h1 {
+    color: #d4af37;
+  }
+  .law-section {
+    background-color: #1a1a1a;
+    border: 2px solid #d4af37;
+    border-radius: 16px;
+    padding: 30px;
+    max-width: 900px;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(212, 175, 55, 0.2);
+  }
+  .law-section h2 {
+    color: #d4af37;
+    margin-bottom: 20px;
+  }
+  .law-section p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #cccccc;
+  }
+  .chat-btn {
+    margin-top: 30px;
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #d4af37;
+    color: #0d0d0d;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .chat-btn:hover {
+    background-color: #b9962e;
+  }
+  .back-link {
+    display: inline-block;
+    margin-top: 20px;
+    color: #d4af37;
+    text-decoration: none;
+  }
+  .back-link:hover {
+    text-decoration: underline;
+  }
+  </style>
+</head>
+<body>
+  <header><h1>Criminal Procedure Code (CrPC)</h1></header>
+  <div class="law-section">
+    <h2>What is the CrPC?</h2>
+    <p>The Code of Criminal Procedure (CrPC) is the main legislation on procedure for administration of substantive criminal law in India. It provides the machinery for investigation, arrest, bail, and trial of criminal offenses.</p>
+    <h2>Why It's Important</h2>
+    <p>It ensures fair and transparent criminal proceedings, protects the rights of the accused, and provides a framework for law enforcement agencies to maintain public order and safety.</p>
+    <a href="{{ url_for('crpc_chat') }}" class="chat-btn">Start Chat About CrPC</a>
+    <br><br>
+    <a href="service.html" class="back-link">&larr; Back to Legal Services</a>
+  </div>
+
+</body>
+</html>
+        

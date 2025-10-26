@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login | Nyaya Shield</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0d0d0d;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .login-container {
+      background-color: #1a1a1a;
+      padding: 40px 30px;
+      border-radius: 16px;
+      border: 2px solid #d4af37;
+      box-shadow: 0 0 20px rgba(212, 175, 55, 0.15);
+      width: 100%;
+      max-width: 400px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #d4af37;
+      margin-bottom: 30px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 0.95rem;
+      color: #cccccc;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: none;
+      border-radius: 8px;
+      background-color: #2a2a2a;
+      color: white;
+    }
+
+    .login-btn {
+      width: 100%;
+      padding: 12px;
+      background-color: #d4af37;
+      color: #0d0d0d;
+      border: none;
+      border-radius: 30px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin-bottom: 10px;
+    }
+
+    .login-btn:hover {
+      background-color: #b9962e;
+    }
+
+    .back-link {
+      display: block;
+      margin-top: 20px;
+      text-align: center;
+      color: #d4af37;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <div style="text-align: center; margin-bottom: 20px;">
+      <a href="{{ url_for('home') }}" style="color: #d4af37; text-decoration: none; font-weight: bold; font-size: 1.2rem;">NyayaShield</a>
+    </div>
+    <h2>Login to Nyaya Shield</h2>
+    <form id="loginForm">
+      <div id="phoneSection">
+        <label for="phone">Phone Number (with country code)</label>
+        <input type="tel" id="phone" name="phone" placeholder="+91XXXXXXXXXX" pattern="\+[0-9]{10,15}" required />
+        <button type="button" id="sendOtpBtn" class="login-btn" style="margin-top: 10px;">Send OTP</button>
+      </div>
+
+      <div id="otpSection" style="display: none;">
+        <label for="otp">Enter OTP</label>
+        <input type="text" id="otp" name="otp" placeholder="Enter 6-digit OTP" pattern="\d{6}" maxlength="6" required />
+        <button type="submit" class="login-btn">Verify OTP</button>
+      </div>
+      
+      <div style="text-align: center; margin-top: 15px;">
+        <a href="#" id="changeNumber" style="color: #d4af37; text-decoration: none; font-size: 0.9rem;">Change Phone Number</a>
+      </div>
+      
+      <div style="margin-top: 20px; text-align: center;">
+        <span style="color: #888; font-size: 0.9rem;">New user? </span>
+        <a href="{{ url_for('register') }}" style="color: #d4af37; text-decoration: none;">Register</a>
+      </div>
+    </form>
+
+    <a href="{{ url_for('home') }}" class="back-link">← Back to Home</a>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const loginForm = document.getElementById('loginForm');
+      const phoneSection = document.getElementById('phoneSection');
+      const otpSection = document.getElementById('otpSection');
+      const sendOtpBtn = document.getElementById('sendOtpBtn');
+      const changeNumberBtn = document.getElementById('changeNumber');
+      const phoneInput = document.getElementById('phone');
+      const otpInput = document.getElementById('otp');
+      let phoneNumber = '';
+
+      // Handle Send OTP button click
+      sendOtpBtn.addEventListener('click', async function() {
+        phoneNumber = phoneInput.value.trim();
+        
+        if (!phoneNumber) {
+          alert('Please enter a valid phone number');
+          return;
+        }
+
+        try {
+          // Show loading state
+          sendOtpBtn.disabled = true;
+          sendOtpBtn.textContent = 'Sending...';
+
+          // Call backend to send OTP
+          const response = await fetch('/api/auth/send-otp', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ phone: phoneNumber })
+          });
+
+          const data = await response.json();
+          
+          if (response.ok) {
+            // Show OTP section and hide phone section
+            phoneSection.style.display = 'none';
+            otpSection.style.display = 'block';
+            otpInput.focus();
+          } else {
+            alert(data.message || 'Failed to send OTP. Please try again.');
+            sendOtpBtn.disabled = false;
+            sendOtpBtn.textContent = 'Send OTP';
+          }
+        } catch (error) {
+          console.error('Error sending OTP:', error);
+          alert('An error occurred. Please try again.');
+          sendOtpBtn.disabled = false;
+          sendOtpBtn.textContent = 'Send OTP';
+        }
+      });
+
+      // Handle form submission for OTP verification
+      loginForm.addEventListener('submit', async function(e) {
+        e.preventDefault();
+        
+        const otp = otpInput.value.trim();
+        
+        if (!otp || otp.length !== 6) {
+          alert('Please enter a valid 6-digit OTP');
+          return;
+        }
+
+        try {
+          // Disable the verify button and show loading state
+          const verifyBtn = loginForm.querySelector('button[type="submit"]');
+          verifyBtn.disabled = true;
+          verifyBtn.textContent = 'Verifying...';
+
+          // Call backend to verify OTP
+          const response = await fetch('/api/auth/verify-otp', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ 
+              phone: phoneNumber,
+              otp: otp
+            })
+          });
+
+          const data = await response.json();
+          
+          if (response.ok) {
+            // Redirect to dashboard on successful login
+            window.location.href = '/dashboard';
+          } else {
+            alert(data.message || 'Invalid OTP. Please try again.');
+            verifyBtn.disabled = false;
+            verifyBtn.textContent = 'Verify OTP';
+          }
+        } catch (error) {
+          console.error('Error verifying OTP:', error);
+          alert('An error occurred. Please try again.');
+          const verifyBtn = loginForm.querySelector('button[type="submit"]');
+          verifyBtn.disabled = false;
+          verifyBtn.textContent = 'Verify OTP';
+        }
+      });
+
+      // Handle Change Number link
+      changeNumberBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        phoneSection.style.display = 'block';
+        otpSection.style.display = 'none';
+        phoneInput.focus();
+      });
+    });
+  </script>
+</body>
+</html>

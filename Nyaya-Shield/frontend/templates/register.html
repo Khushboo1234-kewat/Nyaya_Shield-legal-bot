@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register | Nyaya Shield</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0d0d0d;
+      color: white;
+      display: flex;
+      justify-content:center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .register-container {
+      background-color: #1a1a1a;
+      padding: 40px 30px;
+      border-radius: 16px;
+      border: 2px solid #d4af37;
+      box-shadow: 0 0 20px rgba(212, 175, 55, 0.15);
+      width: 100%;
+      max-width: 400px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #d4af37;
+      margin-bottom: 30px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 0.95rem;
+      color: #cccccc;
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    input[type="number"] {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: none;
+      border-radius: 8px;
+      background-color: #2a2a2a;
+      color: white;
+    }
+
+    .register-btn {
+      width: 100%;
+      padding: 12px;
+      background-color: #d4af37;
+      color: #0d0d0d;
+      border: none;
+      border-radius: 30px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .register-btn:hover {
+      background-color: #b9962e;
+    }
+
+    .back-link {
+      display: block;
+      margin-top: 15px;
+      text-align: center;
+      color: #d4af37;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="register-container">
+    <div style="text-align: center; margin-bottom: 20px;">
+      <a href="{{ url_for('home') }}" style="color: #d4af37; text-decoration: none; font-weight: bold; font-size: 1.2rem;">NyayaShield</a>
+    </div>
+    <h2>Create an Account</h2>
+    <form id="registerForm">
+      <label for="fullname">Full Name</label>
+      <input type="text" id="fullname" name="fullname" required />
+
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" required />
+
+      <label for="phone">Phone Number</label>
+      <div style="display: flex; gap: 10px; margin-bottom: 20px;">
+        <select id="countryCode" name="countryCode" style="width: 80px; padding: 12px; border: none; border-radius: 8px; background-color: #2a2a2a; color: white;">
+          <option value="+91">+91 (IN)</option>
+          <option value="+1">+1 (US)</option>
+          <option value="+44">+44 (UK)</option>
+        </select>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required 
+               pattern="[0-9]{10}" title="Please enter a valid 10-digit phone number" 
+               style="flex: 1; padding: 12px; border: none; border-radius: 8px; background-color: #2a2a2a; color: white;"/>
+      </div>
+
+      <div id="otpSection" style="display: none; margin-bottom: 20px;">
+        <label for="otp">Enter OTP</label>
+        <div style="display: flex; gap: 10px;">
+          <input type="number" id="otp" name="otp" placeholder="6-digit OTP" 
+                 pattern="\d{6}" title="Please enter the 6-digit OTP" 
+                 style="flex: 1; padding: 12px; border: none; border-radius: 8px; background-color: #2a2a2a; color: white;"/>
+          <button type="button" id="resendOtp" style="padding: 0 15px; background-color: #3a3a3a; color: #d4af37; border: 1px solid #d4af37; border-radius: 8px; cursor: pointer;">
+            Resend
+          </button>
+        </div>
+      </div>
+      <button type="button" id="getOtpBtn" class="register-btn" style="margin-bottom: 15px;">Get OTP</button>
+
+      <button type="submit" class="register-btn">Register</button>
+    </form>
+    <p class="login-link">Already have an account? <a href="{{ url_for('login') }}">Login here</a></p>
+    <a href="{{ url_for('home') }}" class="back-link">← Back to Home</a>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const registerForm = document.getElementById('registerForm');
+      const getOtpBtn = document.getElementById('getOtpBtn');
+      const otpSection = document.getElementById('otpSection');
+      const registerBtn = document.querySelector('button[type="submit"]');
+      let otpSent = false;
+
+      // Handle Get OTP button click
+      getOtpBtn.addEventListener('click', function() {
+        const phoneNumber = document.getElementById('phone').value;
+        
+        // Simple validation
+        if (!phoneNumber || phoneNumber.length !== 10 || !/^[0-9]+$/.test(phoneNumber)) {
+          alert('Please enter a valid 10-digit phone number');
+          return;
+        }
+
+        // In a real app, you would send the OTP to the phone number here
+        console.log('Sending OTP to:', phoneNumber);
+        
+        // Show OTP input and hide Get OTP button
+        otpSection.style.display = 'block';
+        getOtpBtn.style.display = 'none';
+        registerBtn.style.display = 'block';
+        otpSent = true;
+        
+        // Start countdown for resend OTP
+        startResendTimer();
+        
+        // For demo purposes, show the OTP in console
+        const demoOtp = Math.floor(100000 + Math.random() * 900000);
+        console.log('Demo OTP:', demoOtp);
+        alert(`Demo OTP: ${demoOtp} (This would be sent via SMS in production)`);
+      });
+
+      // Handle Resend OTP
+      document.getElementById('resendOtp').addEventListener('click', function() {
+        if (otpSent) {
+          const phoneNumber = document.getElementById('phone').value;
+          console.log('Resending OTP to:', phoneNumber);
+          
+          // In a real app, resend the OTP
+          const demoOtp = Math.floor(100000 + Math.random() * 900000);
+          console.log('New Demo OTP:', demoOtp);
+          alert(`New OTP: ${demoOtp} (This would be sent via SMS in production)`);
+          
+          // Restart the resend timer
+          startResendTimer();
+        }
+      });
+
+      // Handle form submission
+      registerForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        if (!otpSent) {
+          alert('Please get and verify your OTP first');
+          return;
+        }
+        
+        const otp = document.getElementById('otp').value;
+        
+        // Simple OTP validation (in a real app, verify with backend)
+        if (!otp || otp.length !== 6 || !/^[0-9]+$/.test(otp)) {
+          alert('Please enter a valid 6-digit OTP');
+          return;
+        }
+        
+        // Get form data
+        const formData = {
+          fullname: document.getElementById('fullname').value,
+          username: document.getElementById('username').value,
+          countryCode: document.getElementById('countryCode').value,
+          phone: document.getElementById('phone').value,
+          otp: otp
+        };
+        
+        console.log('Registration data:', formData);
+        
+        // In a real app, you would send this to your backend
+        alert('Registration successful! (This is a demo. In a real app, this would submit to your backend)');
+        
+        // Redirect to login or dashboard
+        // window.location.href = "{{ url_for('login') }}";
+      });
+      
+      // Function to handle resend OTP timer
+      function startResendTimer() {
+        const resendBtn = document.getElementById('resendOtp');
+        let timeLeft = 30;
+        
+        resendBtn.disabled = true;
+        resendBtn.textContent = `Resend in ${timeLeft}s`;
+        
+        const timer = setInterval(() => {
+          timeLeft--;
+          
+          if (timeLeft <= 0) {
+            clearInterval(timer);
+            resendBtn.disabled = false;
+            resendBtn.textContent = 'Resend';
+          } else {
+            resendBtn.textContent = `Resend in ${timeLeft}s`;
+          }
+        }, 1000);
+      }
+      
+      // Initially hide the register button (show only after OTP is sent)
+      registerBtn.style.display = 'none';
+    });
+  </script>
+</body>
+</html>
+    

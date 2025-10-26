@@ -1,0 +1,740 @@
+# dashboard.html - placeholder content
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - LegalBot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+     <!-- Internal CSS -->
+  <style>
+    :root {
+      --black: #000;
+      --white: #fff;
+      --gold: #d4af37;
+      --gray: #1a1a1a;
+      --light-gray: #333;
+      --text-light: #ccc;
+    }
+
+    body.dashboard-page {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--black);
+      color: var(--white);
+    }
+
+    /* Header */
+    .dashboard-header {
+      background-color: var(--gray);
+      border-bottom: 1px solid var(--gold);
+      padding: 1rem 2rem;
+    }
+
+    .header-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .header-left .logo {
+      font-size: 1.5rem;
+      color: var(--gold);
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .main-nav {
+      margin-left: 2rem;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .main-nav a {
+      color: var(--white);
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    .main-nav a:hover,
+    .main-nav a.active {
+      background-color: var(--gold);
+      color: var(--black);
+    }
+
+    .header-right .user-menu {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .user-info {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .user-avatar i {
+      background-color: var(--gold);
+      color: var(--black);
+      padding: 0.5rem;
+      border-radius: 50%;
+    }
+
+    .user-details .user-name {
+      font-weight: bold;
+    }
+
+    .dropdown-toggle {
+      background: none;
+      border: none;
+      color: var(--white);
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      background-color: var(--gray);
+      border: 1px solid var(--gold);
+      right: 2rem;
+      margin-top: 1rem;
+      z-index: 100;
+    }
+
+    .user-menu:hover .dropdown-menu {
+      display: block;
+    }
+
+    .dropdown-item {
+      padding: 0.75rem 1rem;
+      color: var(--white);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      text-decoration: none;
+    }
+
+    .dropdown-item:hover {
+      background-color: var(--gold);
+      color: var(--black);
+    }
+
+    .dropdown-divider {
+      height: 1px;
+      background-color: var(--light-gray);
+      margin: 0.5rem 0;
+    }
+
+    /* Layout */
+    .dashboard-container {
+      display: flex;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      background-color: var(--gray);
+      width: 300px;
+      padding: 1.5rem;
+      border-right: 1px solid var(--gold);
+    }
+
+    .sidebar-header h3 {
+      color: var(--gold);
+    }
+
+    .action-btn {
+      display: block;
+      background-color: var(--gold);
+      color: var(--black);
+      border: none;
+      padding: 0.6rem 1rem;
+      margin-bottom: 1rem;
+      width: 100%;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      text-align: left;
+    }
+
+    .category-item {
+      padding: 0.5rem 0;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .category-item:hover {
+      color: var(--gold);
+    }
+
+    .recent-stats .stat-item {
+      margin-top: 1rem;
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+    }
+
+    .stat-info .stat-number {
+      font-size: 1.5rem;
+      color: var(--gold);
+    }
+
+    /* Main Content */
+    .main-content {
+      flex: 1;
+      padding: 2rem;
+      background-color: var(--black);
+    }
+
+    .content-section {
+      display: none;
+    }
+
+    .content-section.active {
+      display: block;
+    }
+
+    .chat-container {
+      background-color: var(--light-gray);
+      border-radius: 8px;
+      padding: 1.5rem;
+    }
+
+    .chat-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid var(--gold);
+      padding-bottom: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .chat-controls .btn {
+      margin-left: 0.5rem;
+    }
+
+    .btn {
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 4px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .btn-primary {
+      background-color: var(--gold);
+      color: var(--black);
+    }
+
+    .btn-secondary {
+      background-color: var(--white);
+      color: var(--black);
+    }
+
+    .btn-sm {
+      font-size: 0.85rem;
+    }
+
+    .chat-messages {
+      max-height: 400px;
+      overflow-y: auto;
+      padding-right: 1rem;
+    }
+
+    .welcome-message {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .bot-avatar i {
+      background-color: var(--gold);
+      color: var(--black);
+      padding: 0.6rem;
+      border-radius: 50%;
+    }
+
+    .suggestion-chip {
+      background-color: var(--gold);
+      color: var(--black);
+      padding: 0.4rem 0.8rem;
+      border-radius: 20px;
+      margin: 0.3rem;
+      cursor: pointer;
+      border: none;
+      font-size: 0.9rem;
+    }
+
+    .chat-input-container {
+      margin-top: 1.5rem;
+    }
+
+    .input-wrapper {
+      display: flex;
+      align-items: center;
+      background-color: var(--black);
+      border: 1px solid var(--gold);
+      border-radius: 5px;
+      padding: 0.5rem;
+    }
+
+    .chat-input textarea {
+      flex: 1;
+      background: transparent;
+      border: none;
+      resize: none;
+      color: var(--white);
+      padding: 0.5rem;
+    }
+
+    .input-actions button {
+      background: none;
+      border: none;
+      color: var(--gold);
+      font-size: 1.2rem;
+      cursor: pointer;
+    }
+
+    .input-footer {
+      margin-top: 0.5rem;
+      font-size: 0.85rem;
+      color: var(--text-light);
+      display: flex;
+      justify-content: space-between;
+    }
+
+    /* Other Sections */
+    .section-header h2 {
+      color: var(--gold);
+      margin-bottom: 0.5rem;
+    }
+
+    .history-container,
+    .search-container,
+    .stats-container {
+      background-color: var(--light-gray);
+      padding: 1.5rem;
+      border-radius: 8px;
+    }
+
+    .stat-card {
+      background-color: var(--black);
+      border: 1px solid var(--gold);
+      border-radius: 6px;
+      padding: 1rem;
+      text-align: center;
+      margin: 1rem 0;
+    }
+
+    .stat-icon i {
+      color: var(--gold);
+      font-size: 2rem;
+    }
+
+    .chart-card {
+      background-color: var(--gray);
+      padding: 1rem;
+      border-radius: 6px;
+      margin-top: 1.5rem;
+    }
+
+    .chart-card h3 {
+      color: var(--gold);
+      margin-bottom: 1rem;
+    }
+
+    /* Scrollbar styling for dark mode */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background-color: var(--gold);
+      border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: var(--gray);
+    }
+  </style>
+</head>
+<body class="dashboard-page">
+    <!-- Header -->
+    <header class="dashboard-header">
+        <div class="header-container">
+            <div class="header-left">
+                <div class="logo">
+                    <i class="fas fa-balance-scale"></i>
+                    <span>LegalBot</span>
+                </div>
+                <nav class="main-nav">
+                    <a href="#" class="nav-item active" data-section="chat">
+                        <i class="fas fa-comments"></i>
+                        Chat
+                    </a>
+                    <a href="#" class="nav-item" data-section="history">
+                        <i class="fas fa-history"></i>
+                        History
+                    </a>
+                    <a href="#" class="nav-item" data-section="search">
+                        <i class="fas fa-search"></i>
+                        Search
+                    </a>
+                    <a href="#" class="nav-item" data-section="stats">
+                        <i class="fas fa-chart-bar"></i>
+                        Statistics
+                    </a>
+                </nav>
+            </div>
+            <div class="header-right">
+                <div class="user-menu">
+                    <div class="user-info">
+                        <div class="user-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="user-details">
+                            <span class="user-name">{{ user.full_name }}</span>
+                            <span class="user-role">Legal Assistant User</span>
+                        </div>
+                    </div>
+                    <div class="user-dropdown">
+                        <button class="dropdown-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">
+                                <i class="fas fa-user-cog"></i>
+                                Profile Settings
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <i class="fas fa-bell"></i>
+                                Notifications
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <i class="fas fa-question-circle"></i>
+                                Help & Support
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a href="#" class="dropdown-item" onclick="logout()">
+                                <i class="fas fa-sign-out-alt"></i>
+                                Logout
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h3>Quick Actions</h3>
+            </div>
+            <div class="sidebar-content">
+                <div class="quick-actions">
+                    <button class="action-btn" onclick="startNewChat()">
+                        <i class="fas fa-plus"></i>
+                        New Chat
+                    </button>
+                    <button class="action-btn" onclick="showCategories()">
+                        <i class="fas fa-tags"></i>
+                        Browse Categories
+                    </button>
+                    <button class="action-btn" onclick="showSuggestions()">
+                        <i class="fas fa-lightbulb"></i>
+                        Popular Questions
+                    </button>
+                </div>
+
+                <div class="legal-categories">
+                    <h4>Legal Areas</h4>
+                    <div class="category-list">
+                        <div class="category-item" data-category="ipc">
+                            <i class="fas fa-gavel"></i>
+                            <span>Criminal Law (IPC)</span>
+                        </div>
+                        <div class="category-item" data-category="crpc">
+                            <i class="fas fa-clipboard-list"></i>
+                            <span>Criminal Procedure (CrPC)</span>
+                        </div>
+                        <div class="category-item" data-category="it_act">
+                            <i class="fas fa-laptop"></i>
+                            <span>Cyber Law (IT Act)</span>
+                        </div>
+                        <div class="category-item" data-category="family">
+                            <i class="fas fa-home"></i>
+                            <span>Family Law</span>
+                        </div>
+                        <div class="category-item" data-category="property">
+                            <i class="fas fa-building"></i>
+                            <span>Property Law</span>
+                        </div>
+                        <div class="category-item" data-category="consumer">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span>Consumer Law</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="recent-stats">
+                    <h4>Your Activity</h4>
+                    <div class="stat-item">
+                        <i class="fas fa-comments"></i>
+                        <div class="stat-info">
+                            <span class="stat-number" id="totalChats">{{ recent_chats|length }}</span>
+                            <span class="stat-label">Total Chats</span>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-calendar-day"></i>
+                        <div class="stat-info">
+                            <span class="stat-number" id="todayChats">0</span>
+                            <span class="stat-label">Today's Queries</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Chat Section -->
+            <section id="chat-section" class="content-section active">
+                <div class="chat-container">
+                    <div class="chat-header">
+                        <h2>Legal Assistant Chat</h2>
+                        <div class="chat-controls">
+                            <button class="btn btn-secondary btn-sm" onclick="clearChat()">
+                                <i class="fas fa-trash"></i>
+                                Clear Chat
+                            </button>
+                            <button class="btn btn-primary btn-sm" onclick="exportChat()">
+                                <i class="fas fa-download"></i>
+                                Export
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="chat-messages" id="chatMessages">
+                        <div class="welcome-message">
+                            <div class="bot-avatar">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <div class="message-content">
+                                <h3>Welcome to LegalBot, {{ user.full_name.split()[0] }}!</h3>
+                                <p>I'm your AI-powered legal assistant. Ask me anything about Indian law, and I'll provide you with accurate, helpful guidance.</p>
+                                <div class="suggested-questions">
+                                    <p>Here are some questions you can ask:</p>
+                                    <div class="suggestion-chips">
+                                        <button class="suggestion-chip" onclick="askSuggestion('What is the punishment for theft under IPC?')">
+                                            What is the punishment for theft under IPC?
+                                        </button>
+                                        <button class="suggestion-chip" onclick="askSuggestion('How to file an FIR?')">
+                                            How to file an FIR?
+                                        </button>
+                                        <button class="suggestion-chip" onclick="askSuggestion('What are cyber crime laws in India?')">
+                                            What are cyber crime laws in India?
+                                        </button>
+                                        <button class="suggestion-chip" onclick="askSuggestion('Marriage registration process')">
+                                            Marriage registration process
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="chat-input-container">
+                        <div class="input-suggestions" id="inputSuggestions"></div>
+                        <div class="chat-input">
+                            <div class="input-wrapper">
+                                <textarea 
+                                    id="chatInput" 
+                                    placeholder="Ask your legal question here..."
+                                    rows="1"
+                                    maxlength="2000"
+                                ></textarea>
+                                <div class="input-actions">
+                                    <button class="attachment-btn" title="Attach file">
+                                        <i class="fas fa-paperclip"></i>
+                                    </button>
+                                    <button class="send-btn" id="sendBtn" onclick="sendMessage()" disabled>
+                                        <i class="fas fa-paper-plane"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="input-footer">
+                                <span class="char-count">0/2000</span>
+                                <span class="typing-indicator" id="typingIndicator" style="display: none;">
+                                    <i class="fas fa-robot"></i>
+                                    LegalBot is typing...
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- History Section -->
+            <section id="history-section" class="content-section">
+                <div class="history-container">
+                    <div class="section-header">
+                        <h2>Chat History</h2>
+                        <div class="history-controls">
+                            <div class="search-box">
+                                <i class="fas fa-search"></i>
+                                <input type="text" placeholder="Search your chats..." id="historySearch">
+                            </div>
+                            <select class="filter-select" id="categoryFilter">
+                                <option value="">All Categories</option>
+                                <option value="Criminal Law">Criminal Law</option>
+                                <option value="Cyber Law">Cyber Law</option>
+                                <option value="Family Law">Family Law</option>
+                                <option value="Property Law">Property Law</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="history-content" id="historyContent">
+                        <div class="loading" id="historyLoading">
+                            <i class="fas fa-spinner fa-spin"></i>
+                            Loading chat history...
+                        </div>
+                    </div>
+                    <div class="pagination" id="historyPagination"></div>
+                </div>
+            </section>
+
+            <!-- Search Section -->
+            <section id="search-section" class="content-section">
+                <div class="search-container">
+                    <div class="section-header">
+                        <h2>Legal Knowledge Search</h2>
+                        <p>Search through our comprehensive database of Indian legal provisions</p>
+                    </div>
+                    <div class="search-form">
+                        <div class="search-input-wrapper">
+                            <i class="fas fa-search"></i>
+                            <input type="text" id="legalSearch" placeholder="Search for legal topics, sections, or keywords...">
+                            <button class="btn btn-primary" onclick="performLegalSearch()">
+                                Search
+                            </button>
+                        </div>
+                        <div class="search-filters">
+                            <select id="searchCategory">
+                                <option value="">All Categories</option>
+                                <option value="ipc">Indian Penal Code</option>
+                                <option value="crpc">Criminal Procedure Code</option>
+                                <option value="it_act">Information Technology Act</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="search-results" id="searchResults"></div>
+                </div>
+            </section>
+
+            <!-- Statistics Section -->
+            <section id="stats-section" class="content-section">
+                <div class="stats-container">
+                    <div class="section-header">
+                        <h2>Your Legal Consultation Statistics</h2>
+                    </div>
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-comments"></i>
+                            </div>
+                            <div class="stat-info">
+                                <h3 id="totalChatsCount">0</h3>
+                                <p>Total Consultations</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-calendar-week"></i>
+                            </div>
+                            <div class="stat-info">
+                                <h3 id="recentChatsCount">0</h3>
+                                <p>This Week</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="stat-info">
+                                <h3 id="avgConfidence">0%</h3>
+                                <p>Avg. Confidence</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-tags"></i>
+                            </div>
+                            <div class="stat-info">
+                                <h3 id="topCategory">-</h3>
+                                <p>Most Asked Category</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="charts-container">
+                        <div class="chart-card">
+                            <h3>Category Distribution</h3>
+                            <div class="chart" id="categoryChart"></div>
+                        </div>
+                        <div class="chart-card">
+                            <h3>Weekly Activity</h3>
+                            <div class="chart" id="activityChart"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    <script>
+        // Initialize dashboard
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeDashboard();
+            loadChatHistory();
+            loadUserStats();
+        });
+
+        let currentSessionId = generateSessionId();
+        let chatMessages = [];
+
+        function generateSessionId() {
+            return 'session-' + Date.now() + '-' + Math.random().toString(36).substr(2, 9);
+        }
+
+        function initializeDashboard() {
+            // Setup navigation
+            setupNavigation();
+            
+            // Setup chat input
+            setupChatInput();
+            
+            // Setup dropdown menu
+            setupDropdownMenu();
+            
+            // Setup category filters
+            setupCategoryFilters();
+        }
+
+        // Navigation functionality will be added in main.js
+        // Chat functionality will be added in main.js
+        // Other functions will be implemented in main.js
+    </script>
+</body>
+</html>
